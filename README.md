@@ -13,16 +13,15 @@ TEMPLATE for your report to fill out:
 # Title: Monte Carlo Method for Baccarat (card game)
 ## Team Member(s):
 Xiaoliang Jiang and Te Lin
-(Note: Don't put your email addresses here (which is public).  If a student wants their NAME hidden as well, due to optional FERPA regulations, they can be listed purely by their GitHub ID).
 
 # Monte Carlo Simulation Scenario & Purpose:
 (be sure to read the instructions given in course Moodle)
 ### Senario:
 Baccarat is a popular card game played at casinos, especially among Asian gamblers.
 
-####Hands: the "player" and the "banker."
-####Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
-####Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. We will include this tableau later.
+Hands: the "player" and the "banker."\n
+Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."\n
+Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. We will include this tableau later.
 
 ### Senario:
 With Monte Carlo sampling method, we want to:
