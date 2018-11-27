@@ -21,16 +21,18 @@ Baccarat is a popular card game played at casinos, especially among Asian gamble
 
 Hands: the "player" and the "banker." 
 
-
 Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."\n
+
 Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. We will include this tableau later.
 
 ### Senario:
 With Monte Carlo sampling method, we want to:
 
-####   1.simulate the chance for each outcome;
-####   2.consider in casinos, the bankers usually have unlimited funds, it will be interesting to simulate that with a certain amount of funds in player's hand, how long it will take for a player to lose all funds;
-####   3.and based on different strategies a gambler has, we want to simulate the chance of winning accordingly.
+1.simulate the chance for each outcome;
+
+2.consider in casinos, the bankers usually have unlimited funds, it will be interesting to simulate that with a certain amount of funds in player's hand, how long it will take for a player to lose all funds;
+
+3.and based on different strategies a gambler has, we want to simulate the chance of winning accordingly.
  
 
 ## Simulation's variables of uncertainty
