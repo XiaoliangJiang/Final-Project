@@ -10,13 +10,25 @@ DELETE these lines from TEMPLATE up.
 
 TEMPLATE for your report to fill out:
 
-# Title: 
-
+# Title: Monte Carlo Method for Baccarat (card game)
 ## Team Member(s):
+Xiaoliang Jiang and Te Lin
 (Note: Don't put your email addresses here (which is public).  If a student wants their NAME hidden as well, due to optional FERPA regulations, they can be listed purely by their GitHub ID).
 
 # Monte Carlo Simulation Scenario & Purpose:
 (be sure to read the instructions given in course Moodle)
+Baccarat is a popular card game played at casinos, especially among Asian gamblers.
+
+Hands: the "player" and the "banker."
+Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
+Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. We will include this tableau later.
+Purpose:
+With Monte Carlo sampling method, we want to
+
+simulate the chance for each outcome;
+consider in casinos, the bankers usually have unlimited funds, it will be interesting to simulate that with a certain amount of funds in player's hand, how long it will take for a player to lose all funds;
+and based on different strategies a gambler has, we want to simulate the chance of winning accordingly.
+ 
 
 ## Simulation's variables of uncertainty
 List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
