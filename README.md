@@ -21,7 +21,7 @@ Baccarat is a popular card game played at casinos, especially among Asian gamble
 
 Hands: the "player" and the "banker." 
 
-Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."\n
+Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
 
 Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. We will include this tableau later.
 
