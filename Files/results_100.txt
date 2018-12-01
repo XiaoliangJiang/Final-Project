@@ -1,0 +1,803 @@
+/Users/xiaoliang/venv/bin/python /Users/xiaoliang/PycharmProjects/Final-Project/Baccarat_v0.0.py
+
+Round 1 starts!
+Total cards in decks are 416
+Player's initial points:0. Player's cards: Spades_6 Hearts_4
+Banker's initial points:8. Banker's cards: Spades_6 Spades_2
+Player's total points:0. Player's cards: Spades_6 Hearts_4 
+Banker's total points:8. Banker's cards: Spades_6 Spades_2 
+Banker won!
+
+Round 2 starts!
+Total cards in decks are 412
+Player's initial points:8. Player's cards: Clubs_9 Hearts_9
+Banker's initial points:1. Banker's cards: Hearts_1 Diamonds_Q
+Player's total points:8. Player's cards: Clubs_9 Hearts_9 
+Banker's total points:1. Banker's cards: Hearts_1 Diamonds_Q 
+Player won!
+
+Round 3 starts!
+Total cards in decks are 408
+Player's initial points:7. Player's cards: Diamonds_8 Clubs_9
+Banker's initial points:5. Banker's cards: Spades_8 Hearts_7
+Player's total points:7. Player's cards: Diamonds_8 Clubs_9 
+Banker's total points:0. Banker's cards: Spades_8 Hearts_7 Clubs_5
+Player won!
+
+Round 4 starts!
+Total cards in decks are 403
+Player's initial points:7. Player's cards: Clubs_1 Diamonds_6
+Banker's initial points:4. Banker's cards: Clubs_10 Spades_4
+Player's total points:7. Player's cards: Clubs_1 Diamonds_6 
+Banker's total points:1. Banker's cards: Clubs_10 Spades_4 Spades_7
+Player won!
+
+Round 5 starts!
+Total cards in decks are 398
+Player's initial points:0. Player's cards: Diamonds_K Hearts_K
+Banker's initial points:7. Banker's cards: Hearts_7 Spades_J
+Player's total points:5. Player's cards: Diamonds_K Hearts_K Diamonds_5
+Banker's total points:7. Banker's cards: Hearts_7 Spades_J 
+Banker won!
+
+Round 6 starts!
+Total cards in decks are 393
+Player's initial points:3. Player's cards: Diamonds_K Clubs_3
+Banker's initial points:9. Banker's cards: Diamonds_9 Clubs_K
+Player's total points:3. Player's cards: Diamonds_K Clubs_3 
+Banker's total points:9. Banker's cards: Diamonds_9 Clubs_K 
+Banker won!
+
+Round 7 starts!
+Total cards in decks are 389
+Player's initial points:1. Player's cards: Diamonds_1 Diamonds_10
+Banker's initial points:7. Banker's cards: Spades_9 Spades_8
+Player's total points:9. Player's cards: Diamonds_1 Diamonds_10 Diamonds_8
+Banker's total points:7. Banker's cards: Spades_9 Spades_8 
+Player won!
+
+Round 8 starts!
+Total cards in decks are 384
+Player's initial points:7. Player's cards: Hearts_7 Spades_J
+Banker's initial points:8. Banker's cards: Hearts_Q Clubs_8
+Player's total points:7. Player's cards: Hearts_7 Spades_J 
+Banker's total points:8. Banker's cards: Hearts_Q Clubs_8 
+Banker won!
+
+Round 9 starts!
+Total cards in decks are 380
+Player's initial points:3. Player's cards: Spades_2 Hearts_1
+Banker's initial points:6. Banker's cards: Hearts_4 Diamonds_2
+Player's total points:7. Player's cards: Spades_2 Hearts_1 Clubs_4
+Banker's total points:6. Banker's cards: Hearts_4 Diamonds_2 
+Player won!
+
+Round 10 starts!
+Total cards in decks are 375
+Player's initial points:2. Player's cards: Diamonds_2 Clubs_J
+Banker's initial points:0. Banker's cards: Hearts_10 Spades_J
+Player's total points:2. Player's cards: Diamonds_2 Clubs_J Clubs_Q
+Banker's total points:0. Banker's cards: Hearts_10 Spades_J Spades_Q
+Player won!
+
+Round 11 starts!
+Total cards in decks are 369
+Player's initial points:6. Player's cards: Clubs_6 Hearts_K
+Banker's initial points:9. Banker's cards: Hearts_10 Hearts_9
+Player's total points:6. Player's cards: Clubs_6 Hearts_K 
+Banker's total points:9. Banker's cards: Hearts_10 Hearts_9 
+Banker won!
+
+Round 12 starts!
+Total cards in decks are 365
+Player's initial points:7. Player's cards: Clubs_5 Clubs_2
+Banker's initial points:1. Banker's cards: Hearts_3 Clubs_8
+Player's total points:7. Player's cards: Clubs_5 Clubs_2 
+Banker's total points:1. Banker's cards: Hearts_3 Clubs_8 Clubs_J
+Player won!
+
+Round 13 starts!
+Total cards in decks are 360
+Player's initial points:8. Player's cards: Hearts_4 Hearts_4
+Banker's initial points:2. Banker's cards: Spades_5 Clubs_7
+Player's total points:8. Player's cards: Hearts_4 Hearts_4 
+Banker's total points:2. Banker's cards: Spades_5 Clubs_7 
+Player won!
+
+Round 14 starts!
+Total cards in decks are 356
+Player's initial points:5. Player's cards: Spades_2 Spades_3
+Banker's initial points:2. Banker's cards: Hearts_5 Clubs_7
+Player's total points:2. Player's cards: Spades_2 Spades_3 Spades_7
+Banker's total points:0. Banker's cards: Hearts_5 Clubs_7 Spades_8
+Player won!
+
+Round 15 starts!
+Total cards in decks are 350
+Player's initial points:3. Player's cards: Hearts_3 Hearts_Q
+Banker's initial points:0. Banker's cards: Clubs_K Spades_10
+Player's total points:3. Player's cards: Hearts_3 Hearts_Q Diamonds_K
+Banker's total points:1. Banker's cards: Clubs_K Spades_10 Diamonds_1
+Player won!
+
+Round 16 starts!
+Total cards in decks are 344
+Player's initial points:6. Player's cards: Diamonds_6 Spades_J
+Banker's initial points:4. Banker's cards: Spades_10 Diamonds_4
+Player's total points:6. Player's cards: Diamonds_6 Spades_J 
+Banker's total points:4. Banker's cards: Spades_10 Diamonds_4 Clubs_J
+Player won!
+
+Round 17 starts!
+Total cards in decks are 339
+Player's initial points:4. Player's cards: Spades_4 Clubs_K
+Banker's initial points:5. Banker's cards: Hearts_2 Spades_3
+Player's total points:2. Player's cards: Spades_4 Clubs_K Clubs_8
+Banker's total points:5. Banker's cards: Hearts_2 Spades_3 
+Banker won!
+
+Round 18 starts!
+Total cards in decks are 334
+Player's initial points:9. Player's cards: Diamonds_9 Hearts_10
+Banker's initial points:0. Banker's cards: Diamonds_10 Spades_J
+Player's total points:9. Player's cards: Diamonds_9 Hearts_10 
+Banker's total points:0. Banker's cards: Diamonds_10 Spades_J 
+Player won!
+
+Round 19 starts!
+Total cards in decks are 330
+Player's initial points:3. Player's cards: Spades_4 Clubs_9
+Banker's initial points:0. Banker's cards: Clubs_7 Diamonds_3
+Player's total points:3. Player's cards: Spades_4 Clubs_9 Spades_Q
+Banker's total points:2. Banker's cards: Clubs_7 Diamonds_3 Clubs_2
+Player won!
+
+Round 20 starts!
+Total cards in decks are 324
+Player's initial points:5. Player's cards: Clubs_9 Hearts_6
+Banker's initial points:9. Banker's cards: Hearts_2 Spades_7
+Player's total points:5. Player's cards: Clubs_9 Hearts_6 
+Banker's total points:9. Banker's cards: Hearts_2 Spades_7 
+Banker won!
+
+Round 21 starts!
+Total cards in decks are 320
+Player's initial points:6. Player's cards: Spades_Q Hearts_6
+Banker's initial points:1. Banker's cards: Clubs_J Clubs_1
+Player's total points:6. Player's cards: Spades_Q Hearts_6 
+Banker's total points:9. Banker's cards: Clubs_J Clubs_1 Diamonds_8
+Banker won!
+
+Round 22 starts!
+Total cards in decks are 315
+Player's initial points:8. Player's cards: Clubs_4 Hearts_4
+Banker's initial points:3. Banker's cards: Spades_8 Spades_5
+Player's total points:8. Player's cards: Clubs_4 Hearts_4 
+Banker's total points:3. Banker's cards: Spades_8 Spades_5 
+Player won!
+
+Round 23 starts!
+Total cards in decks are 311
+Player's initial points:4. Player's cards: Diamonds_5 Hearts_9
+Banker's initial points:4. Banker's cards: Spades_1 Spades_3
+Player's total points:5. Player's cards: Diamonds_5 Hearts_9 Spades_1
+Banker's total points:4. Banker's cards: Spades_1 Spades_3 
+Player won!
+
+Round 24 starts!
+Total cards in decks are 306
+Player's initial points:4. Player's cards: Clubs_6 Diamonds_8
+Banker's initial points:4. Banker's cards: Hearts_7 Diamonds_7
+Player's total points:7. Player's cards: Clubs_6 Diamonds_8 Diamonds_3
+Banker's total points:5. Banker's cards: Hearts_7 Diamonds_7 Clubs_1
+Player won!
+
+Round 25 starts!
+Total cards in decks are 300
+Player's initial points:9. Player's cards: Hearts_9 Clubs_J
+Banker's initial points:5. Banker's cards: Hearts_Q Spades_5
+Player's total points:9. Player's cards: Hearts_9 Clubs_J 
+Banker's total points:5. Banker's cards: Hearts_Q Spades_5 
+Player won!
+
+Round 26 starts!
+Total cards in decks are 296
+Player's initial points:1. Player's cards: Hearts_3 Hearts_8
+Banker's initial points:6. Banker's cards: Spades_6 Diamonds_10
+Player's total points:1. Player's cards: Hearts_3 Hearts_8 Clubs_10
+Banker's total points:6. Banker's cards: Spades_6 Diamonds_10 
+Banker won!
+
+Round 27 starts!
+Total cards in decks are 291
+Player's initial points:0. Player's cards: Hearts_8 Diamonds_2
+Banker's initial points:0. Banker's cards: Clubs_Q Diamonds_Q
+Player's total points:0. Player's cards: Hearts_8 Diamonds_2 Clubs_10
+Banker's total points:5. Banker's cards: Clubs_Q Diamonds_Q Diamonds_5
+Banker won!
+
+Round 28 starts!
+Total cards in decks are 285
+Player's initial points:9. Player's cards: Hearts_9 Hearts_J
+Banker's initial points:9. Banker's cards: Diamonds_5 Diamonds_4
+Player's total points:9. Player's cards: Hearts_9 Hearts_J 
+Banker's total points:9. Banker's cards: Diamonds_5 Diamonds_4 
+Tie!
+
+Round 29 starts!
+Total cards in decks are 281
+Player's initial points:1. Player's cards: Spades_1 Spades_K
+Banker's initial points:5. Banker's cards: Diamonds_9 Hearts_6
+Player's total points:2. Player's cards: Spades_1 Spades_K Spades_1
+Banker's total points:5. Banker's cards: Diamonds_9 Hearts_6 
+Banker won!
+
+Round 30 starts!
+Total cards in decks are 276
+Player's initial points:7. Player's cards: Hearts_5 Spades_2
+Banker's initial points:6. Banker's cards: Hearts_Q Clubs_6
+Player's total points:7. Player's cards: Hearts_5 Spades_2 
+Banker's total points:6. Banker's cards: Hearts_Q Clubs_6 
+Player won!
+
+Round 31 starts!
+Total cards in decks are 272
+Player's initial points:8. Player's cards: Diamonds_J Hearts_8
+Banker's initial points:3. Banker's cards: Diamonds_3 Clubs_Q
+Player's total points:8. Player's cards: Diamonds_J Hearts_8 
+Banker's total points:3. Banker's cards: Diamonds_3 Clubs_Q 
+Player won!
+
+Round 32 starts!
+Total cards in decks are 268
+Player's initial points:0. Player's cards: Hearts_K Hearts_10
+Banker's initial points:9. Banker's cards: Diamonds_8 Hearts_1
+Player's total points:0. Player's cards: Hearts_K Hearts_10 
+Banker's total points:9. Banker's cards: Diamonds_8 Hearts_1 
+Banker won!
+
+Round 33 starts!
+Total cards in decks are 264
+Player's initial points:2. Player's cards: Spades_9 Hearts_3
+Banker's initial points:2. Banker's cards: Spades_7 Spades_5
+Player's total points:2. Player's cards: Spades_9 Hearts_3 Spades_J
+Banker's total points:2. Banker's cards: Spades_7 Spades_5 Diamonds_10
+Tie!
+
+Round 34 starts!
+Total cards in decks are 258
+Player's initial points:3. Player's cards: Hearts_1 Hearts_2
+Banker's initial points:1. Banker's cards: Clubs_6 Hearts_5
+Player's total points:3. Player's cards: Hearts_1 Hearts_2 Diamonds_K
+Banker's total points:7. Banker's cards: Clubs_6 Hearts_5 Spades_6
+Banker won!
+
+Round 35 starts!
+Total cards in decks are 252
+Player's initial points:7. Player's cards: Diamonds_3 Clubs_4
+Banker's initial points:0. Banker's cards: Clubs_1 Hearts_9
+Player's total points:7. Player's cards: Diamonds_3 Clubs_4 
+Banker's total points:7. Banker's cards: Clubs_1 Hearts_9 Diamonds_7
+Tie!
+
+Round 36 starts!
+Total cards in decks are 247
+Player's initial points:9. Player's cards: Spades_8 Diamonds_1
+Banker's initial points:4. Banker's cards: Clubs_1 Hearts_3
+Player's total points:9. Player's cards: Spades_8 Diamonds_1 
+Banker's total points:4. Banker's cards: Clubs_1 Hearts_3 
+Player won!
+
+Round 37 starts!
+Total cards in decks are 243
+Player's initial points:5. Player's cards: Spades_J Hearts_5
+Banker's initial points:9. Banker's cards: Diamonds_5 Hearts_4
+Player's total points:5. Player's cards: Spades_J Hearts_5 
+Banker's total points:9. Banker's cards: Diamonds_5 Hearts_4 
+Banker won!
+
+Round 38 starts!
+Total cards in decks are 239
+Player's initial points:1. Player's cards: Hearts_J Spades_1
+Banker's initial points:0. Banker's cards: Clubs_J Hearts_Q
+Player's total points:4. Player's cards: Hearts_J Spades_1 Hearts_3
+Banker's total points:0. Banker's cards: Clubs_J Hearts_Q Clubs_10
+Player won!
+
+Round 39 starts!
+Total cards in decks are 233
+Player's initial points:2. Player's cards: Hearts_5 Diamonds_7
+Banker's initial points:6. Banker's cards: Clubs_1 Clubs_5
+Player's total points:2. Player's cards: Hearts_5 Diamonds_7 Diamonds_Q
+Banker's total points:6. Banker's cards: Clubs_1 Clubs_5 
+Banker won!
+
+Round 40 starts!
+Total cards in decks are 228
+Player's initial points:3. Player's cards: Hearts_9 Clubs_4
+Banker's initial points:7. Banker's cards: Spades_1 Clubs_6
+Player's total points:4. Player's cards: Hearts_9 Clubs_4 Diamonds_1
+Banker's total points:7. Banker's cards: Spades_1 Clubs_6 
+Banker won!
+
+Round 41 starts!
+Total cards in decks are 223
+Player's initial points:0. Player's cards: Diamonds_J Spades_K
+Banker's initial points:4. Banker's cards: Spades_8 Hearts_6
+Player's total points:7. Player's cards: Diamonds_J Spades_K Diamonds_7
+Banker's total points:3. Banker's cards: Spades_8 Hearts_6 Clubs_9
+Player won!
+
+Round 42 starts!
+Total cards in decks are 217
+Player's initial points:1. Player's cards: Diamonds_1 Spades_K
+Banker's initial points:5. Banker's cards: Spades_9 Hearts_6
+Player's total points:1. Player's cards: Diamonds_1 Spades_K Clubs_K
+Banker's total points:5. Banker's cards: Spades_9 Hearts_6 
+Banker won!
+
+Round 43 starts!
+Total cards in decks are 212
+Player's initial points:3. Player's cards: Diamonds_9 Clubs_4
+Banker's initial points:7. Banker's cards: Clubs_7 Spades_10
+Player's total points:8. Player's cards: Diamonds_9 Clubs_4 Spades_5
+Banker's total points:7. Banker's cards: Clubs_7 Spades_10 
+Player won!
+
+Round 44 starts!
+Total cards in decks are 416
+Player's initial points:2. Player's cards: Diamonds_K Diamonds_2
+Banker's initial points:3. Banker's cards: Spades_2 Clubs_1
+Player's total points:2. Player's cards: Diamonds_K Diamonds_2 Spades_10
+Banker's total points:5. Banker's cards: Spades_2 Clubs_1 Diamonds_2
+Banker won!
+
+Round 45 starts!
+Total cards in decks are 410
+Player's initial points:4. Player's cards: Hearts_9 Spades_5
+Banker's initial points:7. Banker's cards: Hearts_1 Diamonds_6
+Player's total points:4. Player's cards: Hearts_9 Spades_5 Diamonds_K
+Banker's total points:7. Banker's cards: Hearts_1 Diamonds_6 
+Banker won!
+
+Round 46 starts!
+Total cards in decks are 405
+Player's initial points:3. Player's cards: Diamonds_K Diamonds_3
+Banker's initial points:2. Banker's cards: Diamonds_2 Spades_K
+Player's total points:9. Player's cards: Diamonds_K Diamonds_3 Diamonds_6
+Banker's total points:2. Banker's cards: Diamonds_2 Spades_K Clubs_J
+Player won!
+
+Round 47 starts!
+Total cards in decks are 399
+Player's initial points:9. Player's cards: Diamonds_9 Diamonds_10
+Banker's initial points:8. Banker's cards: Clubs_J Hearts_8
+Player's total points:9. Player's cards: Diamonds_9 Diamonds_10 
+Banker's total points:8. Banker's cards: Clubs_J Hearts_8 
+Player won!
+
+Round 48 starts!
+Total cards in decks are 395
+Player's initial points:5. Player's cards: Clubs_5 Hearts_J
+Banker's initial points:5. Banker's cards: Clubs_Q Spades_5
+Player's total points:8. Player's cards: Clubs_5 Hearts_J Spades_3
+Banker's total points:5. Banker's cards: Clubs_Q Spades_5 
+Player won!
+
+Round 49 starts!
+Total cards in decks are 390
+Player's initial points:3. Player's cards: Spades_7 Spades_6
+Banker's initial points:4. Banker's cards: Spades_9 Spades_5
+Player's total points:7. Player's cards: Spades_7 Spades_6 Diamonds_4
+Banker's total points:4. Banker's cards: Spades_9 Spades_5 Diamonds_J
+Player won!
+
+Round 50 starts!
+Total cards in decks are 384
+Player's initial points:9. Player's cards: Clubs_2 Hearts_7
+Banker's initial points:2. Banker's cards: Hearts_2 Diamonds_Q
+Player's total points:9. Player's cards: Clubs_2 Hearts_7 
+Banker's total points:2. Banker's cards: Hearts_2 Diamonds_Q 
+Player won!
+
+Round 51 starts!
+Total cards in decks are 380
+Player's initial points:2. Player's cards: Spades_K Clubs_2
+Banker's initial points:7. Banker's cards: Spades_1 Hearts_6
+Player's total points:1. Player's cards: Spades_K Clubs_2 Spades_9
+Banker's total points:7. Banker's cards: Spades_1 Hearts_6 
+Banker won!
+
+Round 52 starts!
+Total cards in decks are 375
+Player's initial points:7. Player's cards: Spades_Q Spades_7
+Banker's initial points:7. Banker's cards: Diamonds_Q Clubs_7
+Player's total points:7. Player's cards: Spades_Q Spades_7 
+Banker's total points:7. Banker's cards: Diamonds_Q Clubs_7 
+Tie!
+
+Round 53 starts!
+Total cards in decks are 371
+Player's initial points:1. Player's cards: Spades_5 Diamonds_6
+Banker's initial points:5. Banker's cards: Hearts_8 Hearts_7
+Player's total points:1. Player's cards: Spades_5 Diamonds_6 Diamonds_Q
+Banker's total points:5. Banker's cards: Hearts_8 Hearts_7 
+Banker won!
+
+Round 54 starts!
+Total cards in decks are 366
+Player's initial points:6. Player's cards: Clubs_K Hearts_6
+Banker's initial points:6. Banker's cards: Hearts_4 Spades_2
+Player's total points:6. Player's cards: Clubs_K Hearts_6 
+Banker's total points:6. Banker's cards: Hearts_4 Spades_2 
+Tie!
+
+Round 55 starts!
+Total cards in decks are 362
+Player's initial points:2. Player's cards: Diamonds_2 Spades_Q
+Banker's initial points:8. Banker's cards: Spades_9 Diamonds_9
+Player's total points:2. Player's cards: Diamonds_2 Spades_Q 
+Banker's total points:8. Banker's cards: Spades_9 Diamonds_9 
+Banker won!
+
+Round 56 starts!
+Total cards in decks are 358
+Player's initial points:9. Player's cards: Clubs_8 Spades_1
+Banker's initial points:7. Banker's cards: Diamonds_7 Clubs_10
+Player's total points:9. Player's cards: Clubs_8 Spades_1 
+Banker's total points:7. Banker's cards: Diamonds_7 Clubs_10 
+Player won!
+
+Round 57 starts!
+Total cards in decks are 354
+Player's initial points:7. Player's cards: Hearts_7 Spades_J
+Banker's initial points:7. Banker's cards: Clubs_5 Hearts_2
+Player's total points:7. Player's cards: Hearts_7 Spades_J 
+Banker's total points:7. Banker's cards: Clubs_5 Hearts_2 
+Tie!
+
+Round 58 starts!
+Total cards in decks are 350
+Player's initial points:6. Player's cards: Hearts_6 Spades_J
+Banker's initial points:6. Banker's cards: Diamonds_6 Spades_K
+Player's total points:6. Player's cards: Hearts_6 Spades_J 
+Banker's total points:6. Banker's cards: Diamonds_6 Spades_K 
+Tie!
+
+Round 59 starts!
+Total cards in decks are 346
+Player's initial points:7. Player's cards: Hearts_8 Diamonds_9
+Banker's initial points:6. Banker's cards: Diamonds_6 Clubs_10
+Player's total points:7. Player's cards: Hearts_8 Diamonds_9 
+Banker's total points:6. Banker's cards: Diamonds_6 Clubs_10 
+Player won!
+
+Round 60 starts!
+Total cards in decks are 342
+Player's initial points:3. Player's cards: Spades_Q Spades_3
+Banker's initial points:8. Banker's cards: Hearts_K Clubs_8
+Player's total points:3. Player's cards: Spades_Q Spades_3 
+Banker's total points:8. Banker's cards: Hearts_K Clubs_8 
+Banker won!
+
+Round 61 starts!
+Total cards in decks are 338
+Player's initial points:8. Player's cards: Diamonds_4 Clubs_4
+Banker's initial points:7. Banker's cards: Spades_1 Diamonds_6
+Player's total points:8. Player's cards: Diamonds_4 Clubs_4 
+Banker's total points:7. Banker's cards: Spades_1 Diamonds_6 
+Player won!
+
+Round 62 starts!
+Total cards in decks are 334
+Player's initial points:5. Player's cards: Hearts_1 Spades_4
+Banker's initial points:3. Banker's cards: Spades_3 Spades_J
+Player's total points:7. Player's cards: Hearts_1 Spades_4 Spades_2
+Banker's total points:9. Banker's cards: Spades_3 Spades_J Diamonds_6
+Banker won!
+
+Round 63 starts!
+Total cards in decks are 328
+Player's initial points:2. Player's cards: Spades_1 Clubs_1
+Banker's initial points:0. Banker's cards: Spades_4 Spades_6
+Player's total points:2. Player's cards: Spades_1 Clubs_1 Clubs_K
+Banker's total points:5. Banker's cards: Spades_4 Spades_6 Diamonds_5
+Banker won!
+
+Round 64 starts!
+Total cards in decks are 322
+Player's initial points:0. Player's cards: Clubs_10 Spades_Q
+Banker's initial points:9. Banker's cards: Clubs_Q Clubs_9
+Player's total points:0. Player's cards: Clubs_10 Spades_Q 
+Banker's total points:9. Banker's cards: Clubs_Q Clubs_9 
+Banker won!
+
+Round 65 starts!
+Total cards in decks are 318
+Player's initial points:1. Player's cards: Clubs_2 Hearts_9
+Banker's initial points:0. Banker's cards: Diamonds_4 Clubs_6
+Player's total points:1. Player's cards: Clubs_2 Hearts_9 Spades_10
+Banker's total points:1. Banker's cards: Diamonds_4 Clubs_6 Clubs_1
+Tie!
+
+Round 66 starts!
+Total cards in decks are 312
+Player's initial points:3. Player's cards: Diamonds_4 Clubs_9
+Banker's initial points:2. Banker's cards: Clubs_1 Clubs_1
+Player's total points:3. Player's cards: Diamonds_4 Clubs_9 Hearts_K
+Banker's total points:9. Banker's cards: Clubs_1 Clubs_1 Diamonds_7
+Banker won!
+
+Round 67 starts!
+Total cards in decks are 306
+Player's initial points:8. Player's cards: Spades_8 Clubs_Q
+Banker's initial points:8. Banker's cards: Spades_5 Diamonds_3
+Player's total points:8. Player's cards: Spades_8 Clubs_Q 
+Banker's total points:8. Banker's cards: Spades_5 Diamonds_3 
+Tie!
+
+Round 68 starts!
+Total cards in decks are 302
+Player's initial points:3. Player's cards: Hearts_1 Hearts_2
+Banker's initial points:5. Banker's cards: Hearts_7 Clubs_8
+Player's total points:1. Player's cards: Hearts_1 Hearts_2 Diamonds_8
+Banker's total points:5. Banker's cards: Hearts_7 Clubs_8 
+Banker won!
+
+Round 69 starts!
+Total cards in decks are 297
+Player's initial points:4. Player's cards: Clubs_9 Diamonds_5
+Banker's initial points:1. Banker's cards: Hearts_7 Diamonds_4
+Player's total points:3. Player's cards: Clubs_9 Diamonds_5 Spades_9
+Banker's total points:0. Banker's cards: Hearts_7 Diamonds_4 Hearts_9
+Player won!
+
+Round 70 starts!
+Total cards in decks are 291
+Player's initial points:2. Player's cards: Spades_1 Diamonds_1
+Banker's initial points:4. Banker's cards: Diamonds_9 Hearts_5
+Player's total points:4. Player's cards: Spades_1 Diamonds_1 Spades_2
+Banker's total points:4. Banker's cards: Diamonds_9 Hearts_5 Clubs_K
+Tie!
+
+Round 71 starts!
+Total cards in decks are 285
+Player's initial points:0. Player's cards: Diamonds_10 Spades_J
+Banker's initial points:3. Banker's cards: Diamonds_4 Diamonds_9
+Player's total points:0. Player's cards: Diamonds_10 Spades_J Hearts_Q
+Banker's total points:3. Banker's cards: Diamonds_4 Diamonds_9 Clubs_Q
+Banker won!
+
+Round 72 starts!
+Total cards in decks are 279
+Player's initial points:8. Player's cards: Diamonds_8 Diamonds_J
+Banker's initial points:2. Banker's cards: Spades_2 Spades_10
+Player's total points:8. Player's cards: Diamonds_8 Diamonds_J 
+Banker's total points:2. Banker's cards: Spades_2 Spades_10 
+Player won!
+
+Round 73 starts!
+Total cards in decks are 275
+Player's initial points:4. Player's cards: Hearts_4 Hearts_J
+Banker's initial points:7. Banker's cards: Diamonds_3 Clubs_4
+Player's total points:4. Player's cards: Hearts_4 Hearts_J Clubs_10
+Banker's total points:7. Banker's cards: Diamonds_3 Clubs_4 
+Banker won!
+
+Round 74 starts!
+Total cards in decks are 270
+Player's initial points:2. Player's cards: Hearts_K Clubs_2
+Banker's initial points:0. Banker's cards: Hearts_8 Hearts_2
+Player's total points:4. Player's cards: Hearts_K Clubs_2 Diamonds_2
+Banker's total points:8. Banker's cards: Hearts_8 Hearts_2 Spades_8
+Banker won!
+
+Round 75 starts!
+Total cards in decks are 264
+Player's initial points:5. Player's cards: Diamonds_5 Spades_J
+Banker's initial points:5. Banker's cards: Hearts_5 Spades_K
+Player's total points:8. Player's cards: Diamonds_5 Spades_J Clubs_3
+Banker's total points:5. Banker's cards: Hearts_5 Spades_K 
+Player won!
+
+Round 76 starts!
+Total cards in decks are 259
+Player's initial points:8. Player's cards: Hearts_Q Clubs_8
+Banker's initial points:5. Banker's cards: Clubs_5 Spades_10
+Player's total points:8. Player's cards: Hearts_Q Clubs_8 
+Banker's total points:5. Banker's cards: Clubs_5 Spades_10 
+Player won!
+
+Round 77 starts!
+Total cards in decks are 255
+Player's initial points:5. Player's cards: Clubs_4 Diamonds_1
+Banker's initial points:3. Banker's cards: Hearts_J Clubs_3
+Player's total points:4. Player's cards: Clubs_4 Diamonds_1 Spades_9
+Banker's total points:6. Banker's cards: Hearts_J Clubs_3 Hearts_3
+Banker won!
+
+Round 78 starts!
+Total cards in decks are 249
+Player's initial points:1. Player's cards: Clubs_2 Hearts_9
+Banker's initial points:8. Banker's cards: Hearts_J Diamonds_8
+Player's total points:1. Player's cards: Clubs_2 Hearts_9 
+Banker's total points:8. Banker's cards: Hearts_J Diamonds_8 
+Banker won!
+
+Round 79 starts!
+Total cards in decks are 245
+Player's initial points:9. Player's cards: Hearts_J Spades_9
+Banker's initial points:8. Banker's cards: Clubs_7 Hearts_1
+Player's total points:9. Player's cards: Hearts_J Spades_9 
+Banker's total points:8. Banker's cards: Clubs_7 Hearts_1 
+Player won!
+
+Round 80 starts!
+Total cards in decks are 241
+Player's initial points:3. Player's cards: Clubs_5 Diamonds_8
+Banker's initial points:7. Banker's cards: Diamonds_J Spades_7
+Player's total points:0. Player's cards: Clubs_5 Diamonds_8 Diamonds_7
+Banker's total points:7. Banker's cards: Diamonds_J Spades_7 
+Banker won!
+
+Round 81 starts!
+Total cards in decks are 236
+Player's initial points:6. Player's cards: Spades_8 Clubs_8
+Banker's initial points:0. Banker's cards: Diamonds_K Clubs_J
+Player's total points:6. Player's cards: Spades_8 Clubs_8 
+Banker's total points:9. Banker's cards: Diamonds_K Clubs_J Diamonds_9
+Banker won!
+
+Round 82 starts!
+Total cards in decks are 231
+Player's initial points:2. Player's cards: Hearts_2 Diamonds_10
+Banker's initial points:7. Banker's cards: Hearts_6 Diamonds_1
+Player's total points:7. Player's cards: Hearts_2 Diamonds_10 Spades_5
+Banker's total points:7. Banker's cards: Hearts_6 Diamonds_1 
+Tie!
+
+Round 83 starts!
+Total cards in decks are 226
+Player's initial points:4. Player's cards: Hearts_6 Hearts_8
+Banker's initial points:1. Banker's cards: Clubs_9 Diamonds_2
+Player's total points:0. Player's cards: Hearts_6 Hearts_8 Hearts_6
+Banker's total points:1. Banker's cards: Clubs_9 Diamonds_2 Diamonds_10
+Banker won!
+
+Round 84 starts!
+Total cards in decks are 220
+Player's initial points:6. Player's cards: Spades_6 Hearts_Q
+Banker's initial points:3. Banker's cards: Diamonds_4 Hearts_9
+Player's total points:6. Player's cards: Spades_6 Hearts_Q 
+Banker's total points:3. Banker's cards: Diamonds_4 Hearts_9 Diamonds_J
+Player won!
+
+Round 85 starts!
+Total cards in decks are 215
+Player's initial points:8. Player's cards: Diamonds_8 Spades_K
+Banker's initial points:0. Banker's cards: Clubs_J Clubs_J
+Player's total points:8. Player's cards: Diamonds_8 Spades_K 
+Banker's total points:0. Banker's cards: Clubs_J Clubs_J 
+Player won!
+
+Round 86 starts!
+Total cards in decks are 211
+Player's initial points:9. Player's cards: Spades_K Clubs_9
+Banker's initial points:0. Banker's cards: Spades_10 Diamonds_J
+Player's total points:9. Player's cards: Spades_K Clubs_9 
+Banker's total points:0. Banker's cards: Spades_10 Diamonds_J 
+Player won!
+
+Round 87 starts!
+Total cards in decks are 416
+Player's initial points:1. Player's cards: Diamonds_Q Spades_1
+Banker's initial points:0. Banker's cards: Spades_J Clubs_Q
+Player's total points:7. Player's cards: Diamonds_Q Spades_1 Clubs_6
+Banker's total points:9. Banker's cards: Spades_J Clubs_Q Spades_9
+Banker won!
+
+Round 88 starts!
+Total cards in decks are 410
+Player's initial points:3. Player's cards: Clubs_4 Spades_9
+Banker's initial points:2. Banker's cards: Hearts_3 Clubs_9
+Player's total points:6. Player's cards: Clubs_4 Spades_9 Spades_3
+Banker's total points:7. Banker's cards: Hearts_3 Clubs_9 Hearts_5
+Banker won!
+
+Round 89 starts!
+Total cards in decks are 404
+Player's initial points:3. Player's cards: Hearts_6 Clubs_7
+Banker's initial points:1. Banker's cards: Diamonds_J Diamonds_1
+Player's total points:3. Player's cards: Hearts_6 Clubs_7 Diamonds_10
+Banker's total points:1. Banker's cards: Diamonds_J Diamonds_1 Clubs_Q
+Player won!
+
+Round 90 starts!
+Total cards in decks are 398
+Player's initial points:6. Player's cards: Spades_6 Clubs_10
+Banker's initial points:1. Banker's cards: Spades_K Hearts_1
+Player's total points:6. Player's cards: Spades_6 Clubs_10 
+Banker's total points:1. Banker's cards: Spades_K Hearts_1 Hearts_J
+Player won!
+
+Round 91 starts!
+Total cards in decks are 393
+Player's initial points:5. Player's cards: Spades_3 Diamonds_2
+Banker's initial points:1. Banker's cards: Spades_K Diamonds_1
+Player's total points:1. Player's cards: Spades_3 Diamonds_2 Spades_6
+Banker's total points:8. Banker's cards: Spades_K Diamonds_1 Hearts_7
+Banker won!
+
+Round 92 starts!
+Total cards in decks are 387
+Player's initial points:4. Player's cards: Spades_K Hearts_4
+Banker's initial points:9. Banker's cards: Hearts_3 Clubs_6
+Player's total points:4. Player's cards: Spades_K Hearts_4 
+Banker's total points:9. Banker's cards: Hearts_3 Clubs_6 
+Banker won!
+
+Round 93 starts!
+Total cards in decks are 383
+Player's initial points:3. Player's cards: Clubs_9 Clubs_4
+Banker's initial points:0. Banker's cards: Hearts_J Hearts_10
+Player's total points:5. Player's cards: Clubs_9 Clubs_4 Clubs_2
+Banker's total points:0. Banker's cards: Hearts_J Hearts_10 Spades_J
+Player won!
+
+Round 94 starts!
+Total cards in decks are 377
+Player's initial points:2. Player's cards: Hearts_2 Hearts_J
+Banker's initial points:5. Banker's cards: Hearts_10 Diamonds_5
+Player's total points:2. Player's cards: Hearts_2 Hearts_J Hearts_10
+Banker's total points:5. Banker's cards: Hearts_10 Diamonds_5 
+Banker won!
+
+Round 95 starts!
+Total cards in decks are 372
+Player's initial points:2. Player's cards: Spades_8 Hearts_4
+Banker's initial points:5. Banker's cards: Hearts_4 Spades_1
+Player's total points:8. Player's cards: Spades_8 Hearts_4 Hearts_6
+Banker's total points:2. Banker's cards: Hearts_4 Spades_1 Hearts_7
+Player won!
+
+Round 96 starts!
+Total cards in decks are 366
+Player's initial points:1. Player's cards: Spades_1 Spades_K
+Banker's initial points:1. Banker's cards: Spades_9 Clubs_2
+Player's total points:6. Player's cards: Spades_1 Spades_K Clubs_5
+Banker's total points:7. Banker's cards: Spades_9 Clubs_2 Hearts_6
+Banker won!
+
+Round 97 starts!
+Total cards in decks are 360
+Player's initial points:5. Player's cards: Spades_10 Hearts_5
+Banker's initial points:5. Banker's cards: Clubs_8 Clubs_7
+Player's total points:5. Player's cards: Spades_10 Hearts_5 Diamonds_10
+Banker's total points:5. Banker's cards: Clubs_8 Clubs_7 
+Tie!
+
+Round 98 starts!
+Total cards in decks are 355
+Player's initial points:9. Player's cards: Hearts_10 Hearts_9
+Banker's initial points:4. Banker's cards: Spades_6 Hearts_8
+Player's total points:9. Player's cards: Hearts_10 Hearts_9 
+Banker's total points:4. Banker's cards: Spades_6 Hearts_8 
+Player won!
+
+Round 99 starts!
+Total cards in decks are 351
+Player's initial points:0. Player's cards: Spades_8 Hearts_2
+Banker's initial points:1. Banker's cards: Clubs_1 Clubs_J
+Player's total points:8. Player's cards: Spades_8 Hearts_2 Clubs_8
+Banker's total points:1. Banker's cards: Clubs_1 Clubs_J Clubs_K
+Player won!
+
+Round 100 starts!
+Total cards in decks are 345
+Player's initial points:3. Player's cards: Diamonds_J Spades_3
+Banker's initial points:0. Banker's cards: Spades_Q Hearts_J
+Player's total points:1. Player's cards: Diamonds_J Spades_3 Diamonds_8
+Banker's total points:4. Banker's cards: Spades_Q Hearts_J Diamonds_4
+Banker won!
+
+Process finished with exit code 0
