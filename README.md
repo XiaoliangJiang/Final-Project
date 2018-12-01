@@ -17,11 +17,10 @@ Xiaoliang Jiang and Te Lin
 # Monte Carlo Simulation Scenario & Purpose:
 (be sure to read the instructions given in course Moodle)
 ## Senario:
-Baccarat is a popular card game played at casinos, especially among Asian gamblers.
+Baccarat is a popular card game played at casinos, especially among Asian gamblers. It is a comparing card game played between two hands, the "player" and the "banker". Each baccarat coup (round of play) has three possible outcomes: "player" (player has the higher score), "banker", and "tie". In baccarat, cards have a point value: cards two through nine are worth face value (in points); tens, jacks, queens and kings have no point value (i.e. are worth zero); aces are worth 1 point; jokers are not used. Hands are valued according to the rightmost digit of the sum of their constituent cards. For example, a hand consisting of 2 and 3 is worth 5, but a hand consisting of 6 and 7 is worth 3 (i.e., the 3 being the rightmost digit in the combined points total of 13). The highest possible hand value in baccarat is therefore nine.
 
 ### Rules of Baccarat:
 If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (known as a "natural"), the tableau is consulted, first for the player's rules, then the banker's.
-
 
 #### Player's rule
 If the player has an initial total of 0–5, he draws a third card. If the player has an initial total of 6 or 7, he stands.
