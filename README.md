@@ -19,6 +19,22 @@ Xiaoliang Jiang and Te Lin
 ### Senario:
 Baccarat is a popular card game played at casinos, especially among Asian gamblers.
 
+#### Rules of Baccarat:
+If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (known as a "natural"), the tableau is consulted, first for the player's rules, then the banker's.
+
+
+##### Player's rule
+If the player has an initial total of 0–5, he draws a third card. If the player has an initial total of 6 or 7, he stands.
+##### Banker's rule
+If the player stood pat (i.e., has only two cards), the banker regards only his own hand and acts according to the same rule as the player. That means the banker draws a third card with hands 0–5 and stands with 6 or 7.
+If the player drew a third card, the banker acts according to the following more complex rules:
+* If the banker total is 2 or less, then the banker draws a card, regardless of what the player's third card is.
+* If the banker total is 3, then the banker draws a third card unless the player's third card was an 8.
+* If the banker total is 4, then the banker draws a third card if the player's third card was 2, 3, 4, 5, 6, 7.
+* If the banker total is 5, then the banker draws a third card if the player's third card was 4, 5, 6, or 7.
+* If the banker total is 6, then the banker draws a third card if the player's third card was a 6 or 7.
+* If the banker total is 7, then the banker stands.
+
 Hands: the "player" and the "banker." 
 
 Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
