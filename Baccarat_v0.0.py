@@ -69,7 +69,7 @@ def rounds(n, min_cards=0.5, decks_num=8):
     :param n: number of rounds
     :param min_cards: minimum percentage of cards allowed in a baccarat game before shuffle
     :param decks_num: number of decks used in a baccarat game
-    :return:
+    :return: a dataframe of game results (in processing)
     """
     decks = generate_decks(decks_num)
     random.shuffle(decks)
