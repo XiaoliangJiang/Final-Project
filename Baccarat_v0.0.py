@@ -26,6 +26,12 @@ class Player(Players):
 
 
 def generate_a_deck():
+    """
+    Generate a deck of standard game cards for baccarat which contains four suits:
+    Clubs, Diamonds, Hearts, Spades from A-K without two joker cards.
+
+    :return: A list contains a full deck of standard game cards for baccarat.
+    """
     deck = {}
     for suit in ("Clubs", "Diamonds", "Hearts", "Spades"):
         for rank in range(1, 14):
@@ -45,11 +51,26 @@ def generate_a_deck():
 
 
 def generate_decks(n):
+    """
+    Given a number of standard game decks of baccarat: n, return a list contains all cards in these n decks.
+
+    :param n: number of decks
+    :return: A list contains n decks of standard baccarat game cards.
+    """
     decks = list(generate_a_deck().keys()) * n
     return decks
 
 
 def rounds(n, min_cards=0.5, decks_num=8):
+    """
+    Given a number of rounds: n, minimum percentage of cards allowed in a baccarat game before shuffle: min_cards
+    and the number of decks used in a baccarat game: decks_num, return the game results(in processing).
+
+    :param n: number of rounds
+    :param min_cards: minimum percentage of cards allowed in a baccarat game before shuffle
+    :param decks_num: number of decks used in a baccarat game
+    :return:
+    """
     decks = generate_decks(decks_num)
     random.shuffle(decks)
     for i in range(n):
@@ -97,8 +118,8 @@ def rounds(n, min_cards=0.5, decks_num=8):
             else:
                 banker_value = banker_initial_value
 
-        print("Player's initial points:{}. Player's cards: {} {}".format(player_initial_value, card1, card2))
-        print("Banker's initial points:{}. Banker's cards: {} {}".format(banker_initial_value, card3, card4))
+        # print("Player's initial points:{}. Player's cards: {} {}".format(player_initial_value, card1, card2))
+        # print("Banker's initial points:{}. Banker's cards: {} {}".format(banker_initial_value, card3, card4))
 
         print("Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2, card5))
         print("Banker's total points:{}. Banker's cards: {} {} {}".format(banker_value, card3, card4, card6))
