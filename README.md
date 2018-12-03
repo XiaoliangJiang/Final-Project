@@ -61,3 +61,4 @@ List and describe your simulation's variables of uncertainty (where you're using
 ## Instructions on how to use the program:
 
 ## All Sources Used:
+Wikipedia (2018, Dec 02) *Baccarat (card game)* Retrieved from https://en.wikipedia.org/wiki/Baccarat_(card_game)
