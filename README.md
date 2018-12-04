@@ -51,6 +51,23 @@ With Monte Carlo sampling method, we want to:
  
 
 ## Simulation's variables of uncertainty
+
+Class Baccarat:
+
+Hands: Player, Banker
+
+CardsDraw:
+
+Result: PlayerWins, BankerWins, Tie
+
+Class Gambler:
+
+Name: string
+
+Strategies:7 kinds-random, all banker, all player, all tie, dragon till 13th, 3 in a row, cross.
+
+GamblerBalance: $100, $1,000, $10,000 or more
+
 List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
 
 ## Hypothesis or hypotheses before running the simulation:
