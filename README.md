@@ -52,7 +52,7 @@ With Monte Carlo sampling method, we want to:
 
 ## Simulation's variables of uncertainty
 
-Class Baccarat:
+#### Class Baccarat:
 
 Hands: Player, Banker
 
@@ -60,7 +60,7 @@ CardsDraw:
 
 Result: PlayerWins, BankerWins, Tie
 
-Class Gambler:
+#### Class Gambler:
 
 Name: string
 
