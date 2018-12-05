@@ -72,16 +72,28 @@ List and describe your simulation's variables of uncertainty (where you're using
 
 ## Hypothesis or hypotheses before running the simulation:
 #### Analytical variables: Strategies, Goals and Bets
-Suppose every gamblers carry the same balances before starting games, and the casino's balance is unlimited. Gamblers would have different strategies, goals, or bets.
+Suppose gamblers carry the same balances before starting games, and the casino's balance is unlimited. Gamblers would have different strategies, goals, or bets.
 
-On our analytical stage, we want to exam the outcome with two of them as controls, and the rest one as test, and making plots accordingly.
+On our analytical stage, we want to exam the outcome with two of them as controls, and the rest one as test, and make plots accordingly.
 Plots will include but not limit to:
 
-1) average time till a gambler reach its goal (earn 10%, earn 20%, etc.);
+1) the time (round) a gambler first reach its goal (earn 10%, earn 20%, etc.) (hypothesis: the gambler is rational, and he/she will leave the casino once he/she reaches his/her goal); How many gamblers (proportion) can reach a given goal (earning 10%, 20%, etc. of the original balance)
 
-2) average time til dead (lose all its balance to the casino);
+10 gamblers (10 100-round trials): goal: 20%
+100, 100, 48, 56, 99, 100, 100, 64, 100, 100
 
-3) average balance after n rounds of game (0 <n <= 5000)
+In barplots:
+
+   a) given goal: 20%, dif bet ritio (in different colors): 5%, 10%, 15%, 20%, 25%, 50%, 75%, 100%... (several plots for dif stratergy)
+
+   b) given ritio: 5%, possibility get dif goal: P(110%), P(120%), P(130%)... (several plots for dif stratergy)
+
+   c) given goal and ritio: dif statergy: random, player, banker, tie, dragon.... (several pair of goal and ritio)
+
+2) the time (round) it takes for a gambler to die (lose all its balance to the casino);
+
+
+3) the balance after n rounds of game (0 <n <= 5000)
 
 
 
