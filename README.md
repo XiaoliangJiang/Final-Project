@@ -71,6 +71,18 @@ GamblerBalance: $100, $1,000, $10,000 or more
 List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
 
 ## Hypothesis or hypotheses before running the simulation:
+#### Analytical variables: Strategies, Goals and Bets
+Suppose every gamblers carry the same balances before starting games, and the casino's balance is unlimited. Gamblers would have different strategies, goals, or bets.
+
+On our analytical stage, we want to exam the outcome with two of them as controls, and the rest one as test, and making plots accordingly.
+Plots will include but not limit to:
+
+1) average time till a gambler reach its goal (earn 10%, earn 20%, etc.);
+
+2) average time til dead (lose all its balance to the casino);
+
+3) average balance after n rounds of game (0 <n <= 5000)
+
 
 
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
