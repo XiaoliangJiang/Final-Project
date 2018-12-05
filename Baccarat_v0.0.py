@@ -1,5 +1,8 @@
 import random
 import pandas as pd
+import pickle
+import numpy as np
+
 
 # class Card:
 #     def __init__(self, suit, rank, value):
@@ -45,7 +48,7 @@ import pandas as pd
 
 
 class Gambler:
-    def __init__(self, name, balance, strategy, choice, chip, status, strategy_weight=(0.8, 0.1, 0.1)):
+    def __init__(self, name, balance, strategy, choice, chip, status, strategy_weight=(1, 0, 0)):
         self.name = name
         self.balance = balance
         self.strategy = strategy
@@ -103,7 +106,7 @@ def generate_decks(n) -> int:
     return decks
 
 
-def rounds(n, gambler_list, min_cards=0.5, decks_num=8, results=True) -> (int, list, float, int, bool):
+def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=10) -> (int, list, float, int, bool):
     """
     Given a number of rounds: n, minimum percentage of cards allowed in a baccarat game before shuffle: min_cards
     and the number of decks used in a baccarat game: decks_num, return the game results(in processing).
@@ -111,11 +114,14 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, results=True) -> (int, l
     :param n: number of rounds
     :param min_cards: minimum percentage of cards allowed in a baccarat game before shuffle
     :param decks_num: number of decks used in a baccarat game
-    :return: a dataframe of game results (in processing)
+    :return: a data frame of game results (in processing)
     """
     standard_deck = generate_a_deck()
     decks = generate_decks(decks_num)
     random.shuffle(decks)
+    final_balance = []
+    for gambler in gambler_list:
+        final_balance += [gambler.balance]
     for i in range(n):
 
         for gambler in gambler_list:
@@ -166,7 +172,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, results=True) -> (int, l
 
         # print("Player's initial points:{}. Player's cards: {} {}".format(player_initial_value, card1, card2))
         # print("Banker's initial points:{}. Banker's cards: {} {}".format(banker_initial_value, card3, card4))
-        if results == True:
+        if show_result:
             print("\nRound {} starts!".format(i + 1))
             print("Total cards in decks are {}".format(len(decks)))
             print("Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2, card5))
@@ -186,7 +192,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, results=True) -> (int, l
                     gambler.status = "Dead"
                     # player.money += 1
             # banker.money -= 1
-            if results == True:
+            if show_result:
                 print("Player won!")
         elif player_value < banker_value:
             for gambler in gambler_list:
@@ -202,7 +208,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, results=True) -> (int, l
                     gambler.status = "Dead"
             # banker.money += 1
             # player.money -= 1
-            if results == True:
+            if show_result:
                 print("Banker won!")
         else:
             for gambler in gambler_list:
@@ -216,22 +222,40 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, results=True) -> (int, l
                 if gambler.balance <= 0:
                     gambler.balance = 0
                     gambler.status = "Dead"
-            if results == True:
+            if show_result:
                 print("Tie!")
 
         for gambler in gambler_list:
             gambler.balance = round(gambler.balance, 2)
-            if results == True:
+            if show_result:
                 gambler.description()
+        if i != 0 and i % scale == 0:
+            for gambler in gambler_list:
+                final_balance += [gambler.balance]
+
         # if player.money <= 0:
         #     print("Player game over!")
         #     break
         # print("round {}, Player money:{}, Banker money:{}.".format(n, player.money, banker.money))
         # print("At the end of round {}, Player money:{}.\n".format(i+1, player.money))
-    final_balance = []
+
     for gambler in gambler_list:
         final_balance.append(gambler.balance)
+    final_balance = chunkIt(final_balance, round(n / scale) + 1)
+
     return final_balance
+
+
+def chunkIt(seq, num):
+    avg = len(seq) / float(num)
+    out = []
+    last = 0.0
+
+    while last < len(seq):
+        out.append(seq[int(last):int(last + avg)])
+        last += avg
+
+    return out
 
 
 def strategy_bet(strategy_type, weight=(0.8, 0.1, 0.1)):
@@ -251,34 +275,82 @@ def strategy_bet(strategy_type, weight=(0.8, 0.1, 0.1)):
     return "".join(decision)
 
 
-def games(m, n, gambler_list, min_cards=0.5, decks_num=8, results=False) -> (int, int, list, float, int, bool):
+def games(m, n, gambler_list_all, min_cards_all=0.5, decks_num_all=8, results=False) -> (
+        int, int, list, float, int, bool):
+    """
+
+    :param m:
+    :param n:
+    :param gambler_list_all:
+    :param min_cards_all:
+    :param decks_num_all:
+    :param results:
+    :return:
+    """
     res = []
+    with open('gambler_setting.pkl', 'wb') as output:
+        for i in gambler_list_all:
+            pickle.dump(i, output, -1)
     for i in range(m):
+        gambler_list_in_game = []
         print("Game: {}".format(i))
-        a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=1, status="Alive")
-        b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=1, status="Alive")
-        c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=1, status="Alive")
-        d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=1, status="Alive")
-        res.append(rounds(n, gambler_list=[a, b, c, d], min_cards=min_cards, decks_num=decks_num, results=results))
+        for gambler in pickled_items('gambler_setting.pkl'):
+            # print('  name: {}, strategy: {}, balance: {}'.format(gambler.name, gambler.strategy,gambler.balance))
+            gambler_list_in_game.append(gambler)
+        res.append(rounds(n, gambler_list=gambler_list_in_game, min_cards=min_cards_all, decks_num=decks_num_all,
+                          show_result=results))
     return res
 
 
-if __name__ == '__main__':
-    a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=1, status="Alive")
-    b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=1, status="Alive")
-    c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=1, status="Alive")
-    d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=1, status="Alive")
-    res = rounds(5000, gambler_list=[a, b, c, d], results=False)
-    print(res)
+def pickled_items(filename):
+    """ Unpickle a file of pickled data. """
+    with open(filename, "rb") as f:
+        while True:
+            try:
+                yield pickle.load(f)
+            except EOFError:
+                break
 
-    a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=1, status="Alive")
-    b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=1, status="Alive")
-    c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=1, status="Alive")
-    d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=1, status="Alive")
-    final_res = games(100, 5000, gambler_list=[a, b, c, d])
-    print(final_res)
-    df=pd.DataFrame.from_records(final_res)
-    df.to_csv("output.csv")
+
+def print_avg(a, n) -> (np.ndarray, int):
+    res=[]
+    for i in range(n):
+        temp_res=sum(a[:, :, i]) / len(a)
+        print(temp_res)
+        res.append(temp_res)
+    return res
+
+if __name__ == '__main__':
+    # a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=1, status="Alive")
+    # b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=1, status="Alive")
+    # c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=1, status="Alive")
+    # d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=1, status="Alive")
+    # res = rounds(5000, gambler_list=[a, b, c, d], show_result=False)
+    # print(res)
+
+    a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=500, status="Alive")
+    b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=500, status="Alive")
+    c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=500, status="Alive")
+    d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=500, status="Alive")
+    final_res = games(100, 200, gambler_list_all=[a, b, c, d])
+    #print(final_res)
+
+    a = np.array(final_res)
+    final_data=print_avg(a,4)
+    df=pd.DataFrame.from_records(final_data)
+    df.to_csv("100Games_200roundsPerGames_Balence1000_chip500_by10.csv")
+    # print(type(a))
+    # print(a[:, :, 0])
+    # print (a.size)
+    # print (a.ndim)
+    # print (len(a))
+    # print(sum(a[:, :, 0])/len(a))
+    # print(sum(a[:, :, 1]) / len(a))
+    # print(sum(a[:, :, 2]) / len(a))
+    # print(sum(a[:, :, 3]) / len(a))
+
+    # df = pd.DataFrame.from_records(final_res)
+    #     # df.to_csv("output.csv")
 
     # for i in range(100):
     #     print(strategy_bet("Player"))
