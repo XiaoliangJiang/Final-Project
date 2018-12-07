@@ -84,11 +84,11 @@ Plots will include but not limit to:
 
 In barplots:
 
-   a. given goal: 20%, dif bet ritio (in different colors): 5%, 10%, 15%, 20%, 25%, 50%, 75%, 100%... (several plots for dif stratergy)
+   a. given goal: 20%, dif bet ratio (in different colors): 5%, 10%, 15%, 20%, 25%, 50%, 75%, 100%... (several plots for dif stratergy)
 
-   b. given ritio: 5%, possibility get dif goal: P(110%), P(120%), P(130%)... (several plots for dif stratergy)
+   b. given ratio: 5%, possibility get dif goal: P(110%), P(120%), P(130%)... (several plots for dif stratergy)
 
-   c. given goal and ritio (the best-performed combination we observed from previous two experiments) : dif statergy: random, player, banker, tie, dragon.... (several pair of goal and ritio)
+   c. given goal and ratio (the best-performed combination we observed from previous two experiments) : dif statergy: random, player, banker, tie, dragon.... (several pair of goals and ratios)
 
 2) the time (round) it takes for a gambler to die (lose all its balance to the casino); (bar plot or 堆叠点图）
 
