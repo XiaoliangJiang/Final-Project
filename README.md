@@ -92,5 +92,8 @@ In barplots:
 
 ## Instructions on how to use the program:
 
+## Our presentation slides:
+https://docs.google.com/presentation/d/1yqReaaVZrzMYm1ZRf6JNUTihplAXr3Z5myLCViKRvLE/edit?usp=sharing
+
 ## All Sources Used:
 Wikipedia (2018, Dec 02). *Baccarat (card game).* Retrieved from https://en.wikipedia.org/wiki/Baccarat_(card_game)
