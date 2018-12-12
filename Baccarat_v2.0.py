@@ -486,4 +486,4 @@ if __name__ == '__main__':
     #     print(strategy_bet("Player"))
 
     # shadiao = Player("Shadiao", 5)
-    # dalao = Banker("Casino", 9999)
+    # dalao = Banker("Casino", 9999) 
