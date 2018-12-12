@@ -120,7 +120,7 @@ def generate_decks(n) -> int:
     return decks
 
 
-def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=10, output='Default') -> (
+def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=10, output='Default', special=-2) -> (
         int, list, float, int, bool, int, str):
     """
     Given a number of rounds: n, minimum percentage of cards allowed in a baccarat game before shuffle: min_cards
@@ -134,6 +134,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
     :param show_result:
     :param scale:
     :param output:
+    :param special:
     :return:
     """
     final_balance = []
@@ -154,7 +155,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
         for gambler in gambler_list:
             gambler.choice = strategy_bet(gambler.strategy, gambler.strategy_weight)
 
-        if len(decks) < min_cards * decks_num * 52:
+        if int(len(decks)) < min_cards * decks_num * 52:
             decks = generate_decks(decks_num)
             random.shuffle(decks)
 
@@ -205,12 +206,37 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
             print("Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2, card5))
             print("Banker's total points:{}. Banker's cards: {} {} {}".format(banker_value, card3, card4, card6))
 
+        for gambler in gambler_list:
+            if gambler.status == "Dead":
+                continue
+            elif special <= -1 and (card1 == card2 or card1 == card5 or card2 == card5):
+                gambler.balance += gambler.chip * 2
+                if special <= -2 and (card1 == card2 and card2 == card5):
+                    gambler.balance += gambler.chip * 100
+                    print(
+                        "Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2,
+                                                                                    card5))
+                    print(
+                        "Banker's total points:{}. Banker's cards: {} {} {}".format(banker_value, card3, card4,
+                                                                                    card6))
+
         if player_value > banker_value:
             for gambler in gambler_list:
                 if gambler.status == "Dead":
                     continue
                 elif gambler.choice == "Player":
                     gambler.balance += gambler.chip
+                    # if special>=1 and (card1.split("_")[1] ==card2.split("_")[1]):
+                    if special >= 1 and (card1 == card2 or card1 == card5 or card2 == card5):
+                        gambler.balance += gambler.chip * 6
+                        if special >= 2 and (card1 == card2 and card2 == card5):
+                            gambler.balance += gambler.chip * 36
+                            print(
+                                "Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2,
+                                                                                            card5))
+                            print(
+                                "Banker's total points:{}. Banker's cards: {} {} {}".format(banker_value, card3, card4,
+                                                                                            card6))
                 else:
                     gambler.balance -= gambler.chip
 
@@ -227,6 +253,17 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
                     continue
                 elif gambler.choice == "Banker":
                     gambler.balance += gambler.chip * 0.95
+                    if special >= 1 and (card3 == card4 or card3 == card6 or card4 == card6):
+                        gambler.balance += gambler.chip * 6
+                        if special >= 2 and (card3 == card4 and card4 == card6):
+                            gambler.balance += gambler.chip * 36
+                            print(
+                                "Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2,
+                                                                                            card5))
+                            print(
+                                "Banker's total points:{}. Banker's cards: {} {} {}".format(banker_value, card3, card4,
+                                                                                            card6))
+
                 else:
                     gambler.balance -= gambler.chip
 
@@ -243,6 +280,16 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
                     continue
                 elif gambler.choice == "Tie":
                     gambler.balance += gambler.chip * 8
+                    if special >= 1 and (card3 == card4 or card3 == card6 or card4 == card6):
+                        gambler.balance += gambler.chip * 25
+                        if special >= 2 and (card3 == card4 and card4 == card6):
+                            gambler.balance += gambler.chip * 125
+                            print(
+                                "Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2,
+                                                                                            card5))
+                            print(
+                                "Banker's total points:{}. Banker's cards: {} {} {}".format(banker_value, card3, card4,
+                                                                                            card6))
                 else:
                     gambler.balance -= gambler.chip
 
@@ -291,7 +338,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
     elif output == "possibility":
         # print (round_balance)
         # print (final_balance)
-        return (round_balance)
+        return round_balance
 
     # print (final_balance)
 
@@ -414,31 +461,32 @@ if __name__ == '__main__':
     # res = rounds(5000, gambler_list=[a, b, c, d], show_result=False)
     # print(res)
 
-    # a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=500, status="Alive")
-    # b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=500, status="Alive")
-    # c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=500, status="Alive")
-    # d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=500, status="Alive")
-    # final_res = games(1000, 500, gambler_list_all=[a, b, c, d])
-    # print(final_res)
-    #
-    # a = np.array(final_res)
-    # final_data = print_avg(a, 4)
-    # df = pd.DataFrame.from_records(final_data)
-    # df.to_csv("1000Games_500roundsPerGames_Balance1000_chip500_by10.csv")
-
-    e = Gambler(name="Tester4", balance=1000, strategy="Banker", choice="Tie", chip=500, status="Alive")
-    final_res = games(10000, 1000, gambler_list_all=[e], m_output="possibility", m_results=False)
+    # Gambler with different chip, games, and rounds
+    a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=500, status="Alive")
+    b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=500, status="Alive")
+    c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=500, status="Alive")
+    d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=500, status="Alive")
+    final_res = games(1000, 1000, gambler_list_all=[a, b, c, d])
     print(final_res)
-    b = np.array(final_res)
 
-    pr = print_possibility(b)
-    print(pr)
-    with open("pBanker_10000Games_1000rounds_chip500.csv", 'w') as f:
-        f.write("1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 7.5, 10\n")
-        f.write(str(pr).replace("\'", "")[1:-1])
+    a = np.array(final_res)
+    final_data = print_avg(a, 4)
+    df = pd.DataFrame.from_records(final_data)
+    df.to_csv("sp-2_1000Games_1000roundsPerGames_Balance1000_chip500_by10.csv")
+
+    # # Testing probability to get a given amount of money.
+    # e = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=100, status="Alive")
+    # final_res = games(1000, 100, gambler_list_all=[e], m_output="possibility", m_results=False)
+    # print(final_res)
+    # b = np.array(final_res)
+    #
+    # pr = print_possibility(b)
+    # print(pr)
+    # with open("pTie_10000Games_1000rounds_chip500.csv", 'w') as f:
+    #     f.write("1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 7.5, 10\n")
+    #     f.write(str(pr).replace("\'", "")[1:-1])
+    #
     # df = pd.DataFrame.from_records(pr)
-    # print (df)
-    # df.to_csv("P_1000Games_100roundsPerGames_Balance1000_chip200_by10.csv")
 
     # print(type(a))
     # print(a[:, :, 0])
