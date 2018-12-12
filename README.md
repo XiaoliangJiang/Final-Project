@@ -1,6 +1,4 @@
 # 590PR Final_Project
-
-
 # Title: Monte Carlo Method for Baccarat (card game)
 ## Team Member(s):
 Xiaoliang Jiang and Te Lin
