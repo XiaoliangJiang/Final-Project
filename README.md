@@ -90,6 +90,17 @@ In barplots:
 
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
 
+1. 1/100,000 probability to get three exactly same card.
+
+
+special>=2: if win and have 2 or 3 same card get additional money.
+two same cards: 6 additional times of bet, three same cards: 36 additional times of bet
+In this situation, it seems like it only affect the trends of each strategy. But the gamblers are still losing money whatever the strategy they chosed.
+
+special<=-2: no matter win or loss, get additional money
+current: 2 additional times of money if 2 cards of Bankers or Players are the same, and 100 additional times of money if 3 cards of Bankers or Players are the same.
+In this situation, it will arise all trends of each strategy. But if the gamblers bet great proportion of their money (like 50%), the gamblers will earn money first (20%) and then loss money later. It is kind of a tricky strategy to hook the gamblers. But in this situation, one problem is that the gamblers only play few rounds with relative high bet proportion and leave the casino after they earned the money. So, our strategy is that force the player play 40 rounds in this special situation.
+
 ## Instructions on how to use the program:
 
 ## Our presentation slides:
