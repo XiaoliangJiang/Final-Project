@@ -18,7 +18,19 @@ can return three different types of results based on a customized simulation pro
  1. The first one focuses on the detailed information on each rounds in a game. It can return a list of lists which
     contains all gamblers balance information in each rounds. Usually, you can set show_results as True in rounds
     function to show the detailed information about the card type in each round.
- 2. 
+ 2. The second example is about comparing the differences between different strategy or chips in each round. It will run
+    the simulation a*b times in total, a is the rounds in each game, and b is the number of games the function simulated
+    It will return a n*m csv file, n is the number of gamblers, and m are the number of games divided by a given step.
+    By using the output of this file, users could generate several plot to see the different trends of different strategy
+    via Monte Carlo simulation.
+ 3. The last one aims to answer a question that in what possibility and how much money we expected to earn from this
+    game. In this part, it will return a table with one single line which contains the probability in each earning ratio
+    from 1.1, 1.2 to 7.5, 10. Users can run this example with different values to generate several lines of results and
+    to check the differences.
+
+More detailed information can be found in docstrings of each functions or you can visit our github repository as follows:
+https://github.com/rita316/Final-Project/blob/master/README.md
+
 """
 
 import random
@@ -30,15 +42,18 @@ import numpy as np
 class Gambler:
     def __init__(self, name, balance, strategy, choice, chip, status, strategy_weight=(1, 0, 0)):
         """
+        This class is about the gambler who is the real player in this game. As you may notice that player and banker are
+        the two sides of this game, so we use gambler to represent the participants of this game.
 
+        For the Gambler class, it has several instance variables to describe the status of the gambler.
 
-        :param name:
-        :param balance:
-        :param strategy:
-        :param choice:
-        :param chip:
-        :param status:
-        :param strategy_weight:
+        :param name: a string represent the gambler's name
+        :param balance: a float (round 2) represent how much money the gambler has
+        :param strategy: a string represent the gambler's strategy with limited keywords: Random, Player, Banker, Tie.
+        :param choice: a string shows the gambler's choice in this round.
+        :param chip: an int shows how much money the gambler bet on this round.
+        :param status: an string shows the gambler's status with limited keywords: Alive or Dead
+        :param strategy_weight: an list shows the proportion of each choice which does not work when strategy is Random.
         """
         self.name = name
         self.balance = balance
@@ -50,18 +65,13 @@ class Gambler:
 
     def description(self):
         """
-        :return:
+        This function will return current status of the gambler. It was designed to test the function and turned off in
+        default settings.
+
+        :return: nothing. But will print gambler's status.
         """
         print("Gambler name:{}, Gambler balance:{}, Gamber choice:{}, Status:{}, Strategy weight:{}."
               .format(self.name, self.balance, self.choice, self.status, self.strategy_weight))
-
-
-# def create_test_gambler(gambler, name="Tester", balance=100, strategy="Random"):
-#     gambler.name = name
-#     gambler.balance = balance
-#     gambler.strategy = strategy
-#     print("Created a player named: {}, has balance: {}, with strategy: {}.".format(gambler.name, gambler.balance,
-#                                                                                    gambler.strategy))
 
 
 def generate_a_deck():
@@ -190,7 +200,7 @@ def rounds(n, gambler_list, min_cards=0.5, decks_num=8, show_result=True, scale=
                 gambler.balance += gambler.chip * 2
                 if special <= -2 and (card1 == card2 and card2 == card5):
                     gambler.balance += gambler.chip * 100
-                    print("Round: {}".format(i+1))
+                    print("Round: {}".format(i + 1))
                     print(
                         "Player's total points:{}. Player's cards: {} {} {}".format(player_value, card1, card2,
                                                                                     card5))
@@ -431,6 +441,14 @@ def print_possibility(b, mode="easy") -> (np.ndarray):
 
 
 if __name__ == '__main__':
+    """
+    Example 1
+     
+    The first one focuses on the detailed information on each rounds in a game. It can return a list of lists which
+    contains all gamblers balance information in each rounds. Usually, you can set show_results as True in rounds
+    function to show the detailed information about the card type in each round.
+    
+    """
     a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=1, status="Alive")
     b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=1, status="Alive")
     c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=1, status="Alive")
@@ -438,52 +456,46 @@ if __name__ == '__main__':
     res = rounds(5000, gambler_list=[a, b, c, d], show_result=False)
     print(res)
 
+    """
+    Example 2
+    
+    The second example is about comparing the differences between different strategy or chips in each round. It will run
+    the simulation a*b times in total, a is the rounds in each game, and b is the number of games the function simulated
+    It will return a n*m csv file, n is the number of gamblers, and m are the number of games divided by a given step.
+    By using the output of this file, users could generate several plot to see the different trends of different strategy
+    via Monte Carlo simulation.
+    
+    """
+    a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=500, status="Alive")
+    b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=500, status="Alive")
+    c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=500, status="Alive")
+    d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=500, status="Alive")
+    final_res = games(1000, 1000, gambler_list_all=[a, b, c, d])
+    print(final_res)
 
+    a = np.array(final_res)
+    final_data = print_avg(a, 4)
+    df = pd.DataFrame.from_records(final_data)
+    df.to_csv("sp-2_1000Games_1000roundsPerGames_Balance1000_chip500_by10.csv")
 
-    # # Gambler with different chip, games, and rounds
-    # a = Gambler(name="Tester1", balance=1000, strategy="Random", choice="Player", chip=500, status="Alive")
-    # b = Gambler(name="Tester2", balance=1000, strategy="Player", choice="Banker", chip=500, status="Alive")
-    # c = Gambler(name="Tester3", balance=1000, strategy="Banker", choice="Tie", chip=500, status="Alive")
-    # d = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=500, status="Alive")
-    # final_res = games(1000, 1000, gambler_list_all=[a, b, c, d])
-    # print(final_res)
-    #
-    # a = np.array(final_res)
-    # final_data = print_avg(a, 4)
-    # df = pd.DataFrame.from_records(final_data)
-    # df.to_csv("sp-2_1000Games_1000roundsPerGames_Balance1000_chip500_by10.csv")
+    """
+    Example 3
+    
+    The last one aims to answer a question that in what possibility and how much money we expected to earn from this
+    game. In this part, it will return a table with one single line which contains the probability in each earning ratio
+    from 1.1, 1.2 to 7.5, 10. Users can run this example with different values to generate several lines of results and
+    to check the differences.
+    
+    """
+    e = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=100, status="Alive")
+    final_res = games(1000, 100, gambler_list_all=[e], m_output="possibility", m_results=False)
+    print(final_res)
+    b = np.array(final_res)
 
+    pr = print_possibility(b)
+    print(pr)
+    with open("pTie_10000Games_1000rounds_chip500.csv", 'w') as f:
+        f.write("1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 7.5, 10\n")
+        f.write(str(pr).replace("\'", "")[1:-1])
 
-
-    # # Testing probability to get a given amount of money.
-    # e = Gambler(name="Tester4", balance=1000, strategy="Tie", choice="Tie", chip=100, status="Alive")
-    # final_res = games(1000, 100, gambler_list_all=[e], m_output="possibility", m_results=False)
-    # print(final_res)
-    # b = np.array(final_res)
-    #
-    # pr = print_possibility(b)
-    # print(pr)
-    # with open("pTie_10000Games_1000rounds_chip500.csv", 'w') as f:
-    #     f.write("1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 7.5, 10\n")
-    #     f.write(str(pr).replace("\'", "")[1:-1])
-    #
-    # df = pd.DataFrame.from_records(pr)
-
-    # print(type(a))
-    # print(a[:, :, 0])
-    # print (a.size)
-    # print (a.ndim)
-    # print (len(a))
-    # print(sum(a[:, :, 0])/len(a))
-    # print(sum(a[:, :, 1]) / len(a))
-    # print(sum(a[:, :, 2]) / len(a))
-    # print(sum(a[:, :, 3]) / len(a))
-
-    # df = pd.DataFrame.from_records(final_res)
-    #     # df.to_csv("output.csv")
-
-    # for i in range(100):
-    #     print(strategy_bet("Player"))
-
-    # shadiao = Player("Shadiao", 5)
-    # dalao = Banker("Casino", 9999) 
+    df = pd.DataFrame.from_records(pr)
