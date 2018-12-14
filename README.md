@@ -101,13 +101,12 @@ With Monte Carlo sampling method, we want to:
  
 
 ## Simulation's variables of uncertainty
-We conducted 1000 times of simulations consisting of different
 1. Strategies: a total four kinds of strategies, which are 
     1) gamblers always bet on Player;
     2) gamblers always bet on Banker;
     3) gamblers always bet on Tie;
     4) gamblers place bets randomly (Player, Banker or Tie).
-2. Ratios of bets to initial balances (abbreviation: ratios): 1%, 2%, 5%, 10%, 20%, 50%.
+2. Ratios of bets to initial balances (abbreviation: bet ratios): 1%, 2%, 5%, 10%, 20%, 50%.
 3. rounds: not tested individually, but were shown on the charts.
 4. Rule Bundles (abbreviation: rules):
     1) Traditional Payoff Rules only; 
@@ -122,30 +121,23 @@ On our analytical stage, we want to exam the outcomes with two of the variables 
 
 |             | Control 1 |  Control 2  | Control 3   |      Test    |
 |:-----------:| :-------: | :---------: | :---------: |:-----------: |
-|Experiment 1 | Ratios    |     Rounds  |   Rules     |**Strategies**|
-|Experiment 2 | Strategies|     Rounds  |   Rules     |**Ratios**    |
-|Experiment 3 | Ratios    |     Rounds  |   Strategies|**Rules**     |
+|Simulation 1 | Bet ratios|     Rounds  |   Rules     |**Strategies**|
+|Simulation 2 | Strategies|     Rounds  |   Rules     |**Bet ratios**|
+|Simulation 3 | Bet ratios|     Rounds  |   Strategies|**Rules**     |
 
-1) the time (round) a gambler first reach its goal (earn 10%, earn 20%, etc.) (Assumption: the gambler is rational, and he/she will leave the casino once he/she reaches his/her goal); How many gamblers (proportion) can reach a given goal (earning 10%, 20%, etc. of the original balance)
+In the simulation 1, we conducted 1000 times of simulations with 2000 rounds per simulation, a bet to initial balance ratio of ^^^%, Traditional Payoff Rules only, and returned outcomes with the following strategies: 
+    1) gamblers always bet on Player;
+    2) gamblers always bet on Banker;
+    3) gamblers always bet on Tie;
+    4) gamblers place bets randomly (Player, Banker or Tie).
+    
+In the simulation 2, we conducted 1000 times of simulations with 2000 rounds per simulation, Traditional Payoff Rules only, random strategy and returned outcomes with the following bet ratios: 1%, 2%, 5%, 10%, 20%, and 50%.
 
-10 gamblers (10 100-round trials): goal: 20%
-100, 100, 48, 56, 99, 100, 100, 64, 100, 100
-
-In barplots:
-
-   a. given goal: 20%, dif bet ratio (in different colors): 5%, 10%, 15%, 20%, 25%, 50%, 75%, 100%... (several plots for dif stratergy)
-
-   b. given ratio: 5%, possibility get dif goal: P(110%), P(120%), P(130%)... (several plots for dif stratergy)
-
-   c. given goal and ratio (the best-performed combination we observed from previous two experiments) : dif statergy: random, player, banker, tie, dragon.... (several pair of goals and ratios)
-
-2) the time (round) it takes for a gambler to die (lose all its balance to the casino); (bar plot or 堆叠点图）
-
-
-3) the balance after n rounds of game (0 <n <= 5000) (bar plot or 堆叠点图）
-
-
-
+In simulation 3, we conducted 1000 times of simulations with 2000 rounds per simulation, random strategy, a bet to initial balance ratio of ^^^% and returned outcomes with the following Rule Bundles (abbreviation: rules):
+    1) Traditional Payoff Rules only; 
+    2) Traditional Payoff Rules + New Payoff Rule 1; and 
+    3) Traditional Payoff Rules + New Payoff Rule 2.
+    
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
 
 1. 1/100,000 probability to get three exactly same card.
