@@ -155,6 +155,8 @@ From Simulation 2, we can conclude that the smaller the ratios of bets to initia
 
 ### Simulation 3
 
+#### Ratio of bets to initial balances: 1% 
+
 1) Traditional Payoff Rules only; 
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip10.png" width="650px" />
 
@@ -166,20 +168,21 @@ From Simulation 2, we can conclude that the smaller the ratios of bets to initia
 
 From simulation 3, we can conclude that rule bundle 2 and rule bundle 3 significantly improved gamblers' odds of winning. For example, at the point of fininshing 2000 rounds in a game, with traditional rules only, a gambler are very likely losing all its balance, however, with New Payoff Rule 1, the average of balance on gamblers' hands are $400, and with New Payoff Rule 1, the average of balance on gamblers' hands are around $300 to $600 using different strategies. In another words, it might encourage travlers or guests to participate in Baccarat. More importantly, a casino is still earning money with new bundles of rules.
 
+#### Ratio of bets to initial balances: 50% 
+
+1) Traditional Payoff Rules only; 
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip500.png" width="650px" />
+
+2) Traditional Payoff Rules + New Payoff Rule 1;  
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_1000games_2000rounds_chip500.png" width="650px" />
+
+3) Traditional Payoff Rules + New Payoff Rule 2.
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip500.png" width="650px" />
+
 ### Possibilities of A Gambler Reaches Its Goal
 
 
 
-1. 1/100,000 probability to get three exactly same card.
-
-
-special>=2: if win and have 2 or 3 same card get additional money.
-two same cards: 6 additional times of bet, three same cards: 36 additional times of bet
-In this situation, it seems like it only affect the trends of each strategy. But the gamblers are still losing money whatever the strategy they chosed.
-
-special<=-2: no matter win or loss, get additional money
-current: 2 additional times of money if 2 cards of Bankers or Players are the same, and 100 additional times of money if 3 cards of Bankers or Players are the same.
-In this situation, it will arise all trends of each strategy. But if the gamblers bet great proportion of their money (like 50%), the gamblers will earn money first (20%) and then loss money later. It is kind of a tricky strategy to hook the gamblers. But in this situation, one problem is that the gamblers only play few rounds with relative high bet proportion and leave the casino after they earned the money. So, our strategy is that force the player play 40 rounds in this special situation.
 
 ## Instructions on how to use the program:
 Please run Baccarat_v2.0.py in the home directory folder.
