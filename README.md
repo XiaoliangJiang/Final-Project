@@ -107,19 +107,26 @@ We conducted 1000 times of simulations consisting of different
     2) gamblers always bet on Banker;
     3) gamblers always bet on Tie;
     4) gamblers place bets randomly (Player, Banker or Tie).
-2. Ratios of bets to initial balances: 1%, 2%, 5%, 10%, 20%, 50%.
-3. rounds: not tested individually, but were shown on the charts. 
-
-List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
+2. Ratios of bets to initial balances (abbreviation: ratios): 1%, 2%, 5%, 10%, 20%, 50%.
+3. rounds: not tested individually, but were shown on the charts.
+4. Rule Bundles (abbreviation: rules):
+    1) Traditional Payoff Rules only; 
+    2) Traditional Payoff Rules + New Payoff Rule 1; and 
+    3) Traditional Payoff Rules + New Payoff Rule 2.
 
 ## Hypothesis or hypotheses before running the simulation:
 #### Analytical variables: Strategies, Goals and Bets
-Suppose gamblers carry the same balances before starting games, and the casino's balance is unlimited. Gamblers would have different strategies, goals, or bets.
+Suppose gamblers carry the same balances before starting games, and the casino's balance is unlimited. Gamblers would have different strategies, goals, or bets (variables).
 
-On our analytical stage, we want to exam the outcome with two of them as controls, and the rest one as test, and make plots accordingly.
-Plots will include but not limit to:
+On our analytical stage, we want to exam the outcomes with two of the variables as controlled variables, and the rest one as a test. After we gather the outcome, we will plot them accordingly.
 
-1) the time (round) a gambler first reach its goal (earn 10%, earn 20%, etc.) (hypothesis: the gambler is rational, and he/she will leave the casino once he/she reaches his/her goal); How many gamblers (proportion) can reach a given goal (earning 10%, 20%, etc. of the original balance)
+| Control 1 |  Control 2  | Control 3   |    Test    |
+| :-------: | :---------: | :---------: |:---------: |
+| Ratios |     Rounds   |   Rules |**Strategies**|
+| Strategies |     Rounds   |   Rules |**Ratios**|
+| Ratios |     Rounds   |   Strategies |**Rules**|
+
+1) the time (round) a gambler first reach its goal (earn 10%, earn 20%, etc.) (Assumption: the gambler is rational, and he/she will leave the casino once he/she reaches his/her goal); How many gamblers (proportion) can reach a given goal (earning 10%, 20%, etc. of the original balance)
 
 10 gamblers (10 100-round trials): goal: 20%
 100, 100, 48, 56, 99, 100, 100, 64, 100, 100
