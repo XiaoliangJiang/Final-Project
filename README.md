@@ -154,9 +154,12 @@ From Simulation 1, we can conclude that in the short run, betting on tie only pe
 From Simulation 2, we can conclude that the smaller the ratios of bets to initial balances, the later a gambler would lose all its balance and the smoother the lines are.
 
 ### Simulation 3
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip10.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip500.png" width="650px" />
 
 
-### How Soon A Gambler Can Reach Its Goal
+### Possibilities of A Gambler Reaches Its Goal
+
 
 
 1. 1/100,000 probability to get three exactly same card.
