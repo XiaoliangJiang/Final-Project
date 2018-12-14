@@ -105,3 +105,8 @@ https://docs.google.com/presentation/d/1yqReaaVZrzMYm1ZRf6JNUTihplAXr3Z5myLCViKR
 
 ## All Sources Used:
 Wikipedia (2018, Dec 02). *Baccarat (card game).* Retrieved from https://en.wikipedia.org/wiki/Baccarat_(card_game)
+WikiHow. (2018, November 11). How to Play Baccarat. Retrieved from https://www.wikihow.com/Play-Baccarat
+Kelly criterion. (2018, October 22). Retrieved from https://en.wikipedia.org/wiki/Kelly_criterion
+
+
+
