@@ -166,7 +166,7 @@ From Simulation 2, we can conclude that the smaller the ratios of bets to initia
 3) Traditional Payoff Rules + New Payoff Rule 2.
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip10.png" width="650px" />
 
-From simulation 3, we can conclude that rule bundle 2 and rule bundle 3 significantly improved gamblers' odds of winning. For example, at the point of fininshing 2000 rounds in a game, with traditional rules only, a gambler are very likely losing all its balance, however, with New Payoff Rule 1, the average of balance on gamblers' hands are $400, and with New Payoff Rule 1, the average of balance on gamblers' hands are around $300 to $600 using different strategies. In another words, it might encourage travlers or guests to participate in Baccarat. More importantly, a casino is still earning money with new bundles of rules.
+From simulation 3 with a bet ration of 1%, we can conclude that rule bundle 2 and rule bundle 3 significantly improved gamblers' odds of winning. For example, at the point of fininshing 2000 rounds in a game, with traditional rules only, a gambler are very likely losing all its balance, however, with New Payoff Rule 1, the average of balance on gamblers' hands are $400, and with New Payoff Rule 1, the average of balance on gamblers' hands are around $300 to $600 using different strategies. In another words, it might encourage travlers or guests to participate in Baccarat. More importantly, a casino is still earning money with new bundles of rules.
 
 #### Ratio of bets to initial balances: 50% 
 
@@ -179,7 +179,24 @@ From simulation 3, we can conclude that rule bundle 2 and rule bundle 3 signific
 3) Traditional Payoff Rules + New Payoff Rule 2.
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip500.png" width="650px" />
 
+From simulation 3 with a bet ration of 50%, we can see that the line of tie still performs the best after 1000 rounds of games even with new bundles of rules. With the new payoff rule 1, the treads are just similar to the traditional rule, however, we can see the death of a gambler (losing all the balances) is significantly delayed. But with the new payoff rule 2, betting on tie is much better than other strategy. It is partially because of betting on tie relies on balance more than other two strategis.
+
 ### Possibilities of A Gambler Reaches Its Goal
+
+####   1) gamblers always bet on Player
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PPlayer.png" width="650px" />
+
+
+####   2) gamblers always bet on Banker
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PBanker.png" width="650px" />
+
+
+####   3) gamblers always bet on Tie
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PTie.png" width="650px" />
+
+
+####   4) gamblers place bets randomly (Player, Banker or Tie)
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PRandom.png" width="650px" />
 
 
 
