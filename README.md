@@ -120,11 +120,11 @@ Suppose gamblers carry the same balances before starting games, and the casino's
 
 On our analytical stage, we want to exam the outcomes with two of the variables as controlled variables, and the rest one as a test. After we gather the outcome, we will plot them accordingly.
 
-| Control 1 |  Control 2  | Control 3   |    Test    |
-| :-------: | :---------: | :---------: |:---------: |
-| Ratios |     Rounds   |   Rules |**Strategies**|
-| Strategies |     Rounds   |   Rules |**Ratios**|
-| Ratios |     Rounds   |   Strategies |**Rules**|
+|| Control 1 |  Control 2  | Control 3   |    Test    |
+|Experiment 1 | :-------: | :---------: | :---------: |:---------: |
+|Experiment 2 | Ratios |     Rounds   |   Rules |**Strategies**|
+|Experiment 3 | Strategies |     Rounds   |   Rules |**Ratios**|
+|Experiment 4 | Ratios |     Rounds   |   Strategies |**Rules**|
 
 1) the time (round) a gambler first reach its goal (earn 10%, earn 20%, etc.) (Assumption: the gambler is rational, and he/she will leave the casino once he/she reaches his/her goal); How many gamblers (proportion) can reach a given goal (earning 10%, 20%, etc. of the original balance)
 
