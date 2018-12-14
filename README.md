@@ -141,7 +141,7 @@ On our analytical stage, we want to exam the outcomes with two of the variables 
     
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
 
-< img src="https://raw.githubusercontent.com/lorenzwalthert/strcode/master/demos/strcode_v0.2.0_video_to_gif2_large.gif" width="650px" />
+< img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip10.png" width="650px" />
 ### Simulation 1
 
 
