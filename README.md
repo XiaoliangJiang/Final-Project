@@ -31,17 +31,17 @@ If the player drew a third card, the banker acts according to the following more
 * If the banker total is 6, then the banker draws a third card if the player's third card was a 6 or 7.
 * If the banker total is 7, then the banker stands.
 
-## Purpose:
+## Payoffs:
+1. Gamblers place bets on Bankers and Banker wins, the ratio of payoff to stake is 1:1, while casino takes 5% commission, so the overall payoff is 0.95:1.
+2. Gamblers bet on Player and Player wins, the ratio of payoff to stake is 1:2.
+3. Gamblers bet on tie and tie happens, then the ratio of payoff to stake is 1:8.
+
+### Purpose:
 With Monte Carlo sampling method, we want to:
 1. Test the theoretical expectation of each strategy (gamlbers always bet on bankers, gamlbers always bet on players and gamblers always bet on tie) .
 2. Compare different bet ratios while controling the strategies .
 3. Explore the possibility of gamblers earning money from this game.
-
-1.simulate the chance for each outcome;
-
-2.consider in casinos, the bankers usually have unlimited funds, it will be interesting to simulate that with a certain amount of funds in player's hand, how long it will take for a player to lose all funds;
-
-3.and based on different strategies a gambler has, we want to simulate the chance of winning accordingly.
+4. Besides the traditional rules, we want to exam the outcomes when a new rule is added: when 
  
 
 ## Simulation's variables of uncertainty
