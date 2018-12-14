@@ -36,6 +36,12 @@ If the player drew a third card, the banker acts according to the following more
 2. Gamblers bet on Player and Player wins, the ratio of payoff to stake is 1:1.
 3. Gamblers bet on tie and tie happens, then the ratio of payoff to stake is 8:1.
 
+| Side        |       Stake     | Payoff   |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 **Besides the classic payoff rules above, we invented two new rules of payoff to help a casino to attract more customers (we will exam the outcomes and compare each one with traditional rules later):**
 
 1. If the side a gambler bet on has a pair (2 Aces, 2 eights, etc.), the gambler gains additional 6-time payoffs, the total payoff now is 6.95:1 (Banker), 7:1 (Player), and 14:1 (tie); 
