@@ -120,7 +120,7 @@ Suppose gamblers carry the same balances before starting games, and the casino's
 
 On our analytical stage, we want to exam the outcomes with two of the variables as controlled variables, and the rest one as a test. After we gather the outcome, we will plot them accordingly.
 
-|| Control 1 |  Control 2  | Control 3   |    Test    |
+|  | Control 1 |  Control 2  | Control 3   |    Test    |
 |Experiment 1 | :-------: | :---------: | :---------: |:---------: |
 |Experiment 2 | Ratios |     Rounds   |   Rules |**Strategies**|
 |Experiment 3 | Strategies |     Rounds   |   Rules |**Ratios**|
