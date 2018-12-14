@@ -146,9 +146,12 @@ On our analytical stage, we want to exam the outcomes with two of the variables 
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip20.png" width="650px" />
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip500.png" width="650px" />
 
+From Simulation 1, we can conclude that in the short run, betting on tie only performs the worst, betting on Bankers performs the best; however, in the long run, the odds of winning betting on tie only would delay a gambler losing all its balance to the casino, betting on Banker or Player are indifferent -- they all leads to a 0 in the balance. Please refer to our slides for more images/results.
 
 ### Simulation 2
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/All_Random_1000games_2000rounds.png" width="650px" />
 
+From Simulation 2, we can conclude that the smaller the ratios of bets to initial balances, the later a gambler would lose all its balance and the smoother the lines are.
 
 ### Simulation 3
 
