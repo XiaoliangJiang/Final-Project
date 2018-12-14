@@ -10,7 +10,7 @@ Xiaoliang Jiang and Te Lin
 Baccarat is a popular card game in casinos, especially among Asian gamblers. It is a card game played between two hands, the "player" and the "banker". Each baccarat coup (round of play) has three possible outcomes: "player" (player has the higher score), "banker", and "tie". In baccarat, cards have a point value: cards two through nine are worth face value (in points); tens, jacks, queens and kings have no point value (i.e. are worth zero); aces are worth 1 point; jokers are not used. Hands are valued according to the rightmost digit of the sum of their constituent cards. For example, a hand consisting of 2 and 3 is worth 5, but a hand consisting of 6 and 7 is worth 3 (i.e., the 3 being the rightmost digit in the combined points total of 13). The highest possible hand value in baccarat is therefore nine.
 
 ### Rules of Baccarat:
-If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (known as a "natural"), the tableau is consulted, first for the player's rules, then the banker's.
+If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (known as a "natural"), the tableau is consulted, first for the Player's rules, then the Banker's.
 
 #### Player's rules
 If the Player has an initial total of 0–5, Player draws a third card. If player has an initial total of 6 or 7, Player stands.
@@ -21,7 +21,7 @@ Hands: the "player" and the "banker."
 
 Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
 
-Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. 
+Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), if neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. 
 
 Tableu of Drawing Rules:
 
@@ -47,7 +47,7 @@ If the player drew a third card, the banker acts according to the following more
 | Player|     1   |   1    |
 | Tie   |     1   |   8    |
 
-**Besides the Traditional Payoff Rules above, we invented two new payoff rules to help a casino to attract more customers (we will exam the outcomes and compare each set of new rules with traditional pay off rules later):**
+**Besides the Traditional Payoff Rules above, we invented two new payoff rules to help a casino to attract more customers (we will exam the outcomes and compare each bundle of new rules to the traditional payoff rules only later):**
 
 #### New Payoff Rule 1
 
@@ -55,7 +55,7 @@ If the side a gambler bet on has a pair (2 Aces, 2 eights, etc.), the gambler ga
     
 if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the gambler gains additional 36-time payoffs, the total payoff now is 36.95:1 (Banker), 37:1 (Player), and 44:1 (tie).
 
-**A pair shows up on the side gambler bet:**
+**A pair shows up on the side a gambler bets on:**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -63,7 +63,7 @@ if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the 
 | Player|     1   |   7    |
 | Tie   |     1   |   14   |
 
-**Three of a kind shows up on the side gambler bet:**
+**Three of a kind shows up on the side a gambler bets on:**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -78,7 +78,7 @@ If a pair show up on the table, disregarding which side the gambler bets on, the
 if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the gambler gain additional 100-time payoffs, the total payoff now is 100.95:1 (Banker), 101:1 (Player), and 108:1 (tie). 
 
 
-**A pair shows up on the table (disregarding which side the gambler bets on):**
+**A pair shows up on the table (disregarding which side a gambler bets on):**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -86,7 +86,7 @@ if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the g
 | Player|     1   |   3    |
 | Tie   |     1   |   11   |
 
-**Three of a kind shows up on the table (disregarding which side the gamblber bets on):**
+**Three of a kind shows up on the table (disregarding which side a gamblber bets on):**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -97,9 +97,9 @@ if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the g
 ## Purposes:
 With Monte Carlo sampling method, we want to:
 1. Test the theoretical expectation of each strategy (gamblers always bet on bankers, gamblers always bet on players and gamblers always bet on tie) .
-2. Compare different bet ratios while controlling the strategies .
-3. Explore the possibility of gamblers earning money from this game.
-4. Compare the performance of three different rule bundles: 1) Traditional Payoff Rules only; 2) Traditional Payoff Rules + New Payoff Rule 1; and 3) Traditional Payoff Rules + New Payoff Rule 2
+2. Compare different ratios of bets to initial balances while controlling the strategies .
+3. Explore the possibilities of gamblers earning money from this game.
+4. Compare the performances of three different rule bundles: 1) Traditional Payoff Rules only; 2) Traditional Payoff Rules + New Payoff Rule 1; and 3) Traditional Payoff Rules + New Payoff Rule 2
  
 
 ## Simulation's variables of uncertainty
