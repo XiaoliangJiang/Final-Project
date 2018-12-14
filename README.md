@@ -38,13 +38,13 @@ If the player drew a third card, the banker acts according to the following more
 
 **Besides the classic payoff rules above, we invented two new rules of payoff to help a casino to attract more customers (we will exam the outcomes and compare each one with traditional rules later):**
 
-**1. If the side a gambler bet on has a pair (2 Aces, 2 eights, etc.), the gambler gains additional 6-time payoffs, the total payoff now is 6.95:1 (Banker), 7:1 (Player), and 14:1 (tie); **
+1. If the side a gambler bet on has a pair (2 Aces, 2 eights, etc.), the gambler gains additional 6-time payoffs, the total payoff now is 6.95:1 (Banker), 7:1 (Player), and 14:1 (tie); 
     
-**if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the gambler gains additional 36-time payoffs, the total payoff now is 36.95:1 (Banker), 37:1 (Player), and 44:1 (tie).**
+if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the gambler gains additional 36-time payoffs, the total payoff now is 36.95:1 (Banker), 37:1 (Player), and 44:1 (tie).
 
-**2. If a pair show up on the table, disregarding which side the gamblber bets on, the gambler gains additional 2-time payoffs, the ratio of payoff to stake is now 2.95:1 (Banker), 3:1 (Player), and 11:1 (tie) ;**
+2. If a pair show up on the table, disregarding which side the gamblber bets on, the gambler gains additional 2-time payoffs, the ratio of payoff to stake is now 2.95:1 (Banker), 3:1 (Player), and 11:1 (tie) ;
 
-**if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the gambler gain additional 100-time payoffs, the total payoff now is 100.95:1 (Banker), 101:1 (Player), and 108:1 (tie). **
+if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the gambler gain additional 100-time payoffs, the total payoff now is 100.95:1 (Banker), 101:1 (Player), and 108:1 (tie). 
 
 ## Purposes:
 With Monte Carlo sampling method, we want to:
