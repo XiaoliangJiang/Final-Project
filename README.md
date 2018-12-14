@@ -184,21 +184,30 @@ From simulation 3 with a bet ration of 50%, we can see that the line of tie stil
 ### Possibilities of A Gambler Reaches Its Goal
 
 ####   1) gamblers always bet on Player
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PPlayer.png" width="800px" />
-
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PPlayer.png" width="850px" />
 
 ####   2) gamblers always bet on Banker
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PBanker.png" width="800px" />
-
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PBanker.png" width="850px" />
 
 ####   3) gamblers always bet on Tie
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PTie.png" width="800px" />
-
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PTie.png" width="850px" />
 
 ####   4) gamblers place bets randomly (Player, Banker or Tie)
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PRandom.png" width="800px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PRandom.png" width="850px" />
 
+The upper parts of graphs above represent the possiblities of reaching goals. The first rows represent the times of balances a gambler wish to reach. For example, 1.2 means when a gambler has $1000 of initial balance, his or her balance has ever reached $1200. The first column represents different bet ratios a gambler would put on to reach its goal.
 
+The lower parts of graphs above represent the expected earnings, which are calculated by the value in the same position of the upper table by the times of balances a gambler wish to reach (first row). For example, in the chart 1), the top left value 0.12474 in the lower part of the chart is calculated by 11.34% (the same position in the upper chart) times 1.1.
+
+In the upper parts, the greener a block is, the higher the possibility a gambler would reach its goal; In the lower parts, the greener a block is, the higher the expected earning. However, even the highest expected earning in the lower parts among these four charts (it happend in the chart 1, row: 50%, col: 1.5) are lower than 1, which means a gambler can not expect to earn money from Baccarat.
+
+####   5) gamblers place bets randomly (Player, Banker or Tie) with Rule Bundle 2 (Traditional Payoff Rules + New Payoff Rule 1)
+
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_random_earning.png" width="850px" />
+
+####   6) gamblers place bets randomly (Player, Banker or Tie) with Rule Bundle 3 (Traditional Payoff Rules + New Payoff Rule 2)
+
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_random_earning.png" width="850px" />
 
 
 ## Instructions on how to use the program:
