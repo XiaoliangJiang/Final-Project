@@ -184,19 +184,19 @@ From simulation 3 with a bet ration of 50%, we can see that the line of tie stil
 ### Possibilities of A Gambler Reaches Its Goal
 
 ####   1) gamblers always bet on Player
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PPlayer.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PPlayer.png" width="800px" />
 
 
 ####   2) gamblers always bet on Banker
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PBanker.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PBanker.png" width="800px" />
 
 
 ####   3) gamblers always bet on Tie
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PTie.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PTie.png" width="800px" />
 
 
 ####   4) gamblers place bets randomly (Player, Banker or Tie)
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PRandom.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PRandom.png" width="800px" />
 
 
 
