@@ -97,7 +97,7 @@ With Monte Carlo sampling method, we want to:
 1. Test the theoretical expectation of each strategy (gamlbers always bet on bankers, gamlbers always bet on players and gamblers always bet on tie) .
 2. Compare different bet ratios while controling the strategies .
 3. Explore the possibility of gamblers earning money from this game.
-4. Compare the performance of three situations: 1) Traditional Payoff Rules only; 2) Traditional Payoff Rules + New Payoff Rule 1; and 3) Traditional Payoff Rules + New Payoff Rule 2
+4. Compare the performance of three different rule bundles: 1) Traditional Payoff Rules only; 2) Traditional Payoff Rules + New Payoff Rule 1; and 3) Traditional Payoff Rules + New Payoff Rule 2
  
 
 ## Simulation's variables of uncertainty
