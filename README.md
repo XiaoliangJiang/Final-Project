@@ -154,10 +154,17 @@ From Simulation 1, we can conclude that in the short run, betting on tie only pe
 From Simulation 2, we can conclude that the smaller the ratios of bets to initial balances, the later a gambler would lose all its balance and the smoother the lines are.
 
 ### Simulation 3
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip10.png" width="650px" />
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_1000games_2000rounds_chip10.png" width="650px" />
+
+1) Traditional Payoff Rules only; 
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip10.png" width="650px" />
 
+2) Traditional Payoff Rules + New Payoff Rule 1;  
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_1000games_2000rounds_chip10.png" width="650px" />
+
+3) Traditional Payoff Rules + New Payoff Rule 2.
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip10.png" width="650px" />
+
+From simulation 3, we can conclude that rule bundle 2 and rule bundle 3 significantly improved gamblers' odds of winning. For example, at the point of fininshing 2000 rounds in a game, with traditional rules only, a gambler are very likely losing all its balance, however, with New Payoff Rule 1, the average of balance on gamblers' hands are $400, and with New Payoff Rule 1, the average of balance on gamblers' hands are around $300 to $600 using different strategies. In another words, it might encourage travlers or guests to participate in Baccarat. More importantly, a casino is still earning money with new bundles of rules.
 
 ### Possibilities of A Gambler Reaches Its Goal
 
