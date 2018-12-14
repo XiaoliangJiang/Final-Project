@@ -1,11 +1,11 @@
-# 590PR Final_Project
+# 590PR Final Project
 # Title: Monte Carlo Method for Baccarat (card game)
 ## Team Member(s):
 Xiaoliang Jiang and Te Lin
 
 # Monte Carlo Simulation Scenario & Purpose:
 ## Senario:
-Baccarat is a popular card game played at casinos, especially among Asian gamblers. It is a comparing card game played between two hands, the "player" and the "banker". Each baccarat coup (round of play) has three possible outcomes: "player" (player has the higher score), "banker", and "tie". In baccarat, cards have a point value: cards two through nine are worth face value (in points); tens, jacks, queens and kings have no point value (i.e. are worth zero); aces are worth 1 point; jokers are not used. Hands are valued according to the rightmost digit of the sum of their constituent cards. For example, a hand consisting of 2 and 3 is worth 5, but a hand consisting of 6 and 7 is worth 3 (i.e., the 3 being the rightmost digit in the combined points total of 13). The highest possible hand value in baccarat is therefore nine.
+Baccarat is a popular card game played at casinos, especially among Asian gamblers. It is a card game played between two hands, the "player" and the "banker". Each baccarat coup (round of play) has three possible outcomes: "player" (player has the higher score), "banker", and "tie". In baccarat, cards have a point value: cards two through nine are worth face value (in points); tens, jacks, queens and kings have no point value (i.e. are worth zero); aces are worth 1 point; jokers are not used. Hands are valued according to the rightmost digit of the sum of their constituent cards. For example, a hand consisting of 2 and 3 is worth 5, but a hand consisting of 6 and 7 is worth 3 (i.e., the 3 being the rightmost digit in the combined points total of 13). The highest possible hand value in baccarat is therefore nine.
 
 ### Rules of Baccarat:
 If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (known as a "natural"), the tableau is consulted, first for the player's rules, then the banker's.
@@ -14,6 +14,15 @@ If neither the player nor the banker is dealt a total of 8 or 9 in the first two
 If the player has an initial total of 0–5, he draws a third card. If the player has an initial total of 6 or 7, he stands.
 #### Banker's rule
 If the player stood pat (i.e., has only two cards), the banker regards only his own hand and acts according to the same rule as the player. That means the banker draws a third card with hands 0–5 and stands with 6 or 7.
+
+Hands: the "player" and the "banker." 
+
+Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
+
+Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. 
+
+Tableu of Drawing Rules:
+
 If the player drew a third card, the banker acts according to the following more complex rules:
 * If the banker total is 2 or less, then the banker draws a card, regardless of what the player's third card is.
 * If the banker total is 3, then the banker draws a third card unless the player's third card was an 8.
@@ -22,14 +31,11 @@ If the player drew a third card, the banker acts according to the following more
 * If the banker total is 6, then the banker draws a third card if the player's third card was a 6 or 7.
 * If the banker total is 7, then the banker stands.
 
-Hands: the "player" and the "banker." 
-
-Possible outcomes each round of play: "player" (player has the higher score), "banker" (banker has the higher score), and "tie."
-
-Rules: After assigning the first four cards to player and banker (the order is player-banker-player-banker), If neither the player nor the banker is dealt a total of 8 or 9 in the first two cards (the single-digit of the sum of two cards on hand), the tableau of drawing rules is consulted, first for the player's rules, then the banker's. We will include this tableau later.
-
 ## Purpose:
 With Monte Carlo sampling method, we want to:
+1. Test the theoretical expectation of each strategy (gamlbers always bet on bankers, gamlbers always bet on players and gamblers always bet on tie) .
+2. Compare different bet ratios while controling the strategies .
+3. Explore the possibility of gamblers earning money from this game.
 
 1.simulate the chance for each outcome;
 
