@@ -71,12 +71,12 @@ if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the 
 
 #### New Payoff Rule 2
 
-If a pair show up on the table, disregarding which side the gamblber bets on, the gambler gains additional 2-time payoffs, the ratio of payoff to stake is now 2.95:1 (Banker), 3:1 (Player), and 11:1 (tie) ;
+If a pair show up on the table, disregarding which side the gambler bets on, the gambler gains additional 2-time payoffs, the ratio of payoff to stake is now 2.95:1 (Banker), 3:1 (Player), and 11:1 (tie) ;
 
 if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the gambler gain additional 100-time payoffs, the total payoff now is 100.95:1 (Banker), 101:1 (Player), and 108:1 (tie). 
 
 
-**A pair shows up on the table (disregarding which side the gamblber bets on):**
+**A pair shows up on the table (disregarding which side the gambler bets on):**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -94,22 +94,21 @@ if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the g
 
 ## Purposes:
 With Monte Carlo sampling method, we want to:
-1. Test the theoretical expectation of each strategy (gamlbers always bet on bankers, gamlbers always bet on players and gamblers always bet on tie) .
-2. Compare different bet ratios while controling the strategies .
+1. Test the theoretical expectation of each strategy (gamblers always bet on bankers, gamblers always bet on players and gamblers always bet on tie) .
+2. Compare different bet ratios while controlling the strategies .
 3. Explore the possibility of gamblers earning money from this game.
 4. Compare the performance of three different rule bundles: 1) Traditional Payoff Rules only; 2) Traditional Payoff Rules + New Payoff Rule 1; and 3) Traditional Payoff Rules + New Payoff Rule 2
  
 
 ## Simulation's variables of uncertainty
-
-1. Strategies: our simulation consists of four kinds of strategy, which are 
+We conducted 1000 times of simulations consisting of different
+1. Strategies: a total four kinds of strategies, which are 
     1) gamblers always bet on Player;
     2) gamblers always bet on Banker;
     3) gamblers always bet on Tie;
     4) gamblers place bets randomly (Player, Banker or Tie).
- 
-2. Ratio of bets to initial balances:
-3. rounds:
+2. Ratios of bets to initial balances: 1%, 2%, 5%, 10%, 20%, 50%.
+3. rounds: not tested individually, but were shown on the charts. 
 
 List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
 
