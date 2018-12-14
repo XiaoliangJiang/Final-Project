@@ -155,7 +155,8 @@ From Simulation 2, we can conclude that the smaller the ratios of bets to initia
 
 ### Simulation 3
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip10.png" width="650px" />
-<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip500.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_1000games_2000rounds_chip10.png" width="650px" />
+<img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip10.png" width="650px" />
 
 
 ### Possibilities of A Gambler Reaches Its Goal
