@@ -45,7 +45,7 @@ If the player drew a third card, the banker acts according to the following more
 | Player|     1   |   1    |
 | Tie   |     1   |   8    |
 
-**Besides the classic payoff rules above, we invented two new rules of payoff to help a casino to attract more customers (we will exam the outcomes and compare each set of rule with traditional rules later):**
+**Besides the Traditional Payoff Rules above, we invented two new payoff rules to help a casino to attract more customers (we will exam the outcomes and compare each set of new rules with traditional pay off rules later):**
 
 #### New Payoff Rule 1
 
