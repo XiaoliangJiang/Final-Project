@@ -142,8 +142,11 @@ On our analytical stage, we want to exam the outcomes with two of the variables 
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
 
 ### Simulation 1
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip10.png" width="650px" />
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip20.png" width="650px" />
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip500.png" width="650px" />
 
 From Simulation 1, we can conclude that in the short run, betting on tie only performs the worst, betting on Bankers performs the best; however, in the long run, the odds of winning betting on tie only would delay a gambler losing all its balance to the casino, betting on Banker or Player are indifferent -- they all leads to a 0 in the balance. Please refer to our slides for more images/results.
@@ -158,12 +161,15 @@ From Simulation 2, we can conclude that the smaller the ratios of bets to initia
 #### Ratio of bets to initial balances: 1% 
 
 1) Traditional Payoff Rules only; 
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip10.png" width="650px" />
 
 2) Traditional Payoff Rules + New Payoff Rule 1;  
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_1000games_2000rounds_chip10.png" width="650px" />
 
 3) Traditional Payoff Rules + New Payoff Rule 2.
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip10.png" width="650px" />
 
 From simulation 3 with a bet ration of 1%, we can conclude that rule bundle 2 and rule bundle 3 significantly improved gamblers' odds of winning. For example, at the point of fininshing 2000 rounds in a game, with traditional rules only, a gambler are very likely losing all its balance, however, with New Payoff Rule 1, the average of balance on gamblers' hands are $400, and with New Payoff Rule 1, the average of balance on gamblers' hands are around $300 to $600 using different strategies. In another words, it might encourage travlers or guests to participate in Baccarat. More importantly, a casino is still earning money with new bundles of rules.
@@ -171,28 +177,35 @@ From simulation 3 with a bet ration of 1%, we can conclude that rule bundle 2 an
 #### Ratio of bets to initial balances: 50% 
 
 1) Traditional Payoff Rules only; 
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/1000games_2000rounds_chip500.png" width="650px" />
 
 2) Traditional Payoff Rules + New Payoff Rule 1;  
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_1000games_2000rounds_chip500.png" width="650px" />
 
 3) Traditional Payoff Rules + New Payoff Rule 2.
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_1000games_2000rounds_chip500.png" width="650px" />
 
 From simulation 3 with a bet ration of 50%, we can see that the line of tie still performs the best after 1000 rounds of games even with new bundles of rules. With the new payoff rule 1, the treads are just similar to the traditional rule, however, we can see the death of a gambler (losing all the balances) is significantly delayed. But with the new payoff rule 2, betting on tie is much better than other strategy. It is partially because of betting on tie relies on balance more than other two strategis.
 
-### Possibilities of A Gambler Reaches Its Goal
+### Possibilities of A Gambler Reaches Its Goal (10,000 games, 100 rounds per game)
 
 ####   1) gamblers always bet on Player
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PPlayer.png" width="850px" />
 
 ####   2) gamblers always bet on Banker
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PBanker.png" width="850px" />
 
 ####   3) gamblers always bet on Tie
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PTie.png" width="850px" />
 
 ####   4) gamblers place bets randomly (Player, Banker or Tie)
+
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/PRandom.png" width="850px" />
 
 The upper parts of graphs above represent the possiblities of reaching goals. The first rows represent the times of balances a gambler wish to reach. For example, 1.2 means when a gambler has $1000 of initial balance, his or her balance has ever reached $1200. The first column represents different bet ratios a gambler would put on to reach its goal.
@@ -201,13 +214,15 @@ The lower parts of graphs above represent the expected earnings, which are calcu
 
 In the upper parts, the greener a block is, the higher the possibility a gambler would reach its goal; In the lower parts, the greener a block is, the higher the expected earning. However, even the highest expected earning in the lower parts among these four charts (it happend in the chart 1, row: 50%, col: 1.5) are lower than 1, which means a gambler can not expect to earn money from Baccarat.
 
-####   5) gamblers place bets randomly (Player, Banker or Tie) with Rule Bundle 2 (Traditional Payoff Rules + New Payoff Rule 1)
+####   5) gamblers place bets randomly (Player, Banker or Tie) with the Rule Bundle 2 (Traditional Payoff Rules + New Payoff Rule 1)
 
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp2_random_earning.png" width="850px" />
 
-####   6) gamblers place bets randomly (Player, Banker or Tie) with Rule Bundle 3 (Traditional Payoff Rules + New Payoff Rule 2)
+####   6) gamblers place bets randomly (Player, Banker or Tie) with the Rule Bundle 3 (Traditional Payoff Rules + New Payoff Rule 2)
 
 <img src="https://github.com/rita316/Final-Project/blob/master/Files/graphs/sp-2_random_earning.png" width="850px" />
+
+Generally speaking, two new rule bundles perform better than the Rule Bundle 1 (Traditional Payoff Rules only), however, the expected earning is still lower than 1, which means a gambler can not expect to earn money from Baccarat, in another word, a casino could still beat the gamblers in the long run.
 
 
 ## Instructions on how to use the program:
