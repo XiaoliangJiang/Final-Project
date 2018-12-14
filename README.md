@@ -48,7 +48,7 @@ If the player drew a third card, the banker acts according to the following more
     
     if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the gambler gains additional 36-time payoffs, the total payoff now is 36.95:1 (Banker), 37:1 (Player), and 44:1 (tie).
 
-** A pair show up on the side gambler bet:**
+** A pair shows up on the side gambler bet:**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -56,7 +56,7 @@ If the player drew a third card, the banker acts according to the following more
 | Player|     1   |   7    |
 | Tie   |     1   |   14   |
 
-** Three of a kind show up on the side gambler bet:**
+** Three of a kind shows up on the side gambler bet:**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -69,7 +69,7 @@ If the player drew a third card, the banker acts according to the following more
     if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the gambler gain additional 100-time payoffs, the total payoff now is 100.95:1 (Banker), 101:1 (Player), and 108:1 (tie). 
 
 
-** A pair show up on the table:**
+** A pair shows up on the table (disregarding which side the gamblber bets on)**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
@@ -77,7 +77,7 @@ If the player drew a third card, the banker acts according to the following more
 | Player|     1   |   3    |
 | Tie   |     1   |   11   |
 
-** Three of a kind show up on the table:**
+** Three of a kind shows up on the table (disregarding which side the gamblber bets on)**
 
 | Side  |  Stake  | Payoff |
 | :---: |:-------:| :-----:|
