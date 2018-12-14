@@ -153,6 +153,22 @@ current: 2 additional times of money if 2 cards of Bankers or Players are the sa
 In this situation, it will arise all trends of each strategy. But if the gamblers bet great proportion of their money (like 50%), the gamblers will earn money first (20%) and then loss money later. It is kind of a tricky strategy to hook the gamblers. But in this situation, one problem is that the gamblers only play few rounds with relative high bet proportion and leave the casino after they earned the money. So, our strategy is that force the player play 40 rounds in this special situation.
 
 ## Instructions on how to use the program:
+Please run Baccarat_v2.0.py in the home directory folder.
+
+In the main function, we provided some example about how to use our python scripts to do the simulation. In general it
+can return three different types of results based on a customized simulation processing.
+ 1. The first one focuses on the detailed information on each rounds in a game. It can return a list of lists which
+    contains all gamblers balance information in each rounds. Usually, you can set show_results as True in rounds
+    function to show the detailed information about the card type in each round.
+ 2. The second example is about comparing the differences between different strategy or chips in each round. It will run
+    the simulation a*b times in total, a is the rounds in each game, and b is the number of games the function simulated
+    It will return a n*m csv file, n is the number of gamblers, and m are the number of games divided by a given step.
+    By using the output of this file, users could generate several plot to see the different trends of different strategy
+    via Monte Carlo simulation.
+ 3. The last one aims to answer a question that in what possibility and how much money we expected to earn from this
+    game. In this part, it will return a table with one single line which contains the probability in each earning ratio
+    from 1.1, 1.2 to 7.5, 10. Users can run this example with different values to generate several lines of results and
+    to check the differences.
 
 ## Our presentation slides:
 https://docs.google.com/presentation/d/1yqReaaVZrzMYm1ZRf6JNUTihplAXr3Z5myLCViKRvLE/edit?usp=sharing
