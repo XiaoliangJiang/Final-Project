@@ -125,15 +125,16 @@ On our analytical stage, we want to exam the outcomes with two of the variables 
 |Simulation 2 | Strategies|     Rounds  |   Rules     |**Bet ratios**|
 |Simulation 3 | Bet ratios|     Rounds  |   Strategies|**Rules**     |
 
-In the simulation 1, we conducted 1000 times of simulations with 2000 rounds per simulation, a bet to initial balance ratio of ^^^%, Traditional Payoff Rules only, and returned outcomes with the following strategies: 
+
+1. In the simulation 1, we conducted 1000 times of simulations with 2000 rounds per simulation, a bet to initial balance ratio of ^^^%, Traditional Payoff Rules only, and returned outcomes with the following strategies: 
     1) gamblers always bet on Player;
     2) gamblers always bet on Banker;
     3) gamblers always bet on Tie;
     4) gamblers place bets randomly (Player, Banker or Tie).
     
-In the simulation 2, we conducted 1000 times of simulations with 2000 rounds per simulation, Traditional Payoff Rules only, random strategy and returned outcomes with the following bet ratios: 1%, 2%, 5%, 10%, 20%, and 50%.
+2. In the simulation 2, we conducted 1000 times of simulations with 2000 rounds per simulation, Traditional Payoff Rules only, random strategy and returned outcomes with the following bet ratios: 1%, 2%, 5%, 10%, 20%, and 50%.
 
-In simulation 3, we conducted 1000 times of simulations with 2000 rounds per simulation, random strategy, a bet to initial balance ratio of ^^^% and returned outcomes with the following Rule Bundles (abbreviation: rules):
+3. In simulation 3, we conducted 1000 times of simulations with 2000 rounds per simulation, random strategy, a bet to initial balance ratio of ^^^% and returned outcomes with the following Rule Bundles (abbreviation: rules):
     1) Traditional Payoff Rules only; 
     2) Traditional Payoff Rules + New Payoff Rule 1; and 
     3) Traditional Payoff Rules + New Payoff Rule 2.
