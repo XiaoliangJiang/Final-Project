@@ -36,11 +36,11 @@ If the player drew a third card, the banker acts according to the following more
 2. Gamblers bet on Player and Player wins, the ratio of payoff to stake is 1:1.
 3. Gamblers bet on tie and tie happens, then the ratio of payoff to stake is 8:1.
 
-| Side        |       Stake     | Payoff   |
-| :---: |:-------------:| :-----:|
-| Banker| 1 | 0.95 |
-| Player | 1      |   1 |
-| Tie | 1   |    8 |
+| Side  |  Stake  | Payoff |
+| :---: |:-------:| :-----:|
+| Banker|     1   |   0.95 |
+| Player|     1   |   1    |
+| Tie   |     1   |   8    |
 
 **Besides the classic payoff rules above, we invented two new rules of payoff to help a casino to attract more customers (we will exam the outcomes and compare each one with traditional rules later):**
 
@@ -48,9 +48,38 @@ If the player drew a third card, the banker acts according to the following more
     
     if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the gambler gains additional 36-time payoffs, the total payoff now is 36.95:1 (Banker), 37:1 (Player), and 44:1 (tie).
 
+** A pair show up on the side gambler bet:**
+| Side  |  Stake  | Payoff |
+| :---: |:-------:| :-----:|
+| Banker|     1   |   6.95 |
+| Player|     1   |   7    |
+| Tie   |     1   |   14   |
+
+** Three of a kind show up on the side gambler bet:**
+| Side  |  Stake  | Payoff |
+| :---: |:-------:| :-----:|
+| Banker|     1   |   36.95|
+| Player|     1   |   37   |
+| Tie   |     1   |   44   |
+
 2. If a pair show up on the table, disregarding which side the gamblber bets on, the gambler gains additional 2-time payoffs, the ratio of payoff to stake is now 2.95:1 (Banker), 3:1 (Player), and 11:1 (tie) ;
 
     if the side a gambler bet on has three of a kind (3 Aces, 3 eights, etc.), the gambler gain additional 100-time payoffs, the total payoff now is 100.95:1 (Banker), 101:1 (Player), and 108:1 (tie). 
+
+
+** A pair show up on the table:**
+| Side  |  Stake  | Payoff |
+| :---: |:-------:| :-----:|
+| Banker|     1   |   2.95 |
+| Player|     1   |   3    |
+| Tie   |     1   |   11   |
+
+** Three of a kind show up on the table:**
+| Side  |  Stake  | Payoff |
+| :---: |:-------:| :-----:|
+| Banker|     1   |  100.95|
+| Player|     1   |  101   |
+| Tie   |     1   |  108   |
 
 ## Purposes:
 With Monte Carlo sampling method, we want to:
