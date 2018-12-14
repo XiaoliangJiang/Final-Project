@@ -32,6 +32,9 @@ If the player drew a third card, the banker acts according to the following more
 * If the banker total is 7, then the banker stands.
 
 ### Payoffs:
+
+#### Traditional Payoff Rules 
+
 1. Gamblers place bets on Bankers and Banker wins, the ratio of payoff to stake is 1:1, while the casino takes 5% commission, so the overall payoff is 0.95:1.
 2. Gamblers bet on Player and Player wins, the ratio of payoff to stake is 1:1.
 3. Gamblers bet on tie and tie happens, then the ratio of payoff to stake is 8:1.
@@ -44,8 +47,9 @@ If the player drew a third card, the banker acts according to the following more
 
 **Besides the classic payoff rules above, we invented two new rules of payoff to help a casino to attract more customers (we will exam the outcomes and compare each set of rule with traditional rules later):**
 
-#### New Rule 1
-1. If the side a gambler bet on has a pair (2 Aces, 2 eights, etc.), the gambler gains additional 6-time payoffs, the total payoff now is 6.95:1 (Banker), 7:1 (Player), and 14:1 (tie); 
+#### New Payoff Rule 1
+
+If the side a gambler bet on has a pair (2 Aces, 2 eights, etc.), the gambler gains additional 6-time payoffs, the total payoff now is 6.95:1 (Banker), 7:1 (Player), and 14:1 (tie); 
     
 if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the gambler gains additional 36-time payoffs, the total payoff now is 36.95:1 (Banker), 37:1 (Player), and 44:1 (tie).
 
@@ -65,7 +69,7 @@ if the side a gambler bets on has three of a kind (3 Aces, 3 eights, etc.), the 
 | Player|     1   |   37   |
 | Tie   |     1   |   44   |
 
-#### New Rule 2
+#### New Payoff Rule 2
 
 If a pair show up on the table, disregarding which side the gamblber bets on, the gambler gains additional 2-time payoffs, the ratio of payoff to stake is now 2.95:1 (Banker), 3:1 (Player), and 11:1 (tie) ;
 
@@ -93,7 +97,7 @@ With Monte Carlo sampling method, we want to:
 1. Test the theoretical expectation of each strategy (gamlbers always bet on bankers, gamlbers always bet on players and gamblers always bet on tie) .
 2. Compare different bet ratios while controling the strategies .
 3. Explore the possibility of gamblers earning money from this game.
-4. Besides the traditional rules, we want to exam the outcomes when a new rule is added: when 
+4. Compare the performance of three situations: 1) Traditional Payoff Rules only; 2) Traditional Payoff Rules + New Payoff Rule 1; and 3) Traditional Payoff Rules + New Payoff Rule 2
  
 
 ## Simulation's variables of uncertainty
